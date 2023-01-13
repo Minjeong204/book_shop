@@ -14,9 +14,8 @@
 			<div class="col-sm-3">
 				<div class="left-sidebar">
 				<p><p><p><p><p><p>
-					<h2>국내외 서적</h2>
+ 					<h2>국내외 서적</h2>
 					<div class="panel-group category-products" id="accordian">
-						<!--category-productsr-->
 						<div class="panel panel-default">
 							<div class="panel-heading">
 								<h4 class="panel-title">
@@ -25,8 +24,8 @@
 											class="fa fa-plus"></i></span> 소설
 									</a>
 								</h4>
-							</div>
-							<div id="novel" class="panel-collapse collapse">
+							</div> 
+ 							<div id="novel" class="panel-collapse collapse">
 								<div class="panel-body">
 									<ul>
 										<li><a href="<c:url value="/category/novel/1"/>">나라별 소설 </a></li>

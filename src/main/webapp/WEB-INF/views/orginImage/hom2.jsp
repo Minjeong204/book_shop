@@ -1063,7 +1063,7 @@
   
     <script src="<c:url value="/resources/js/jquery.js"/>"></script>
 	<script src="<c:url value="/resources/js/bootstrap.min.js"/>"></script>
-	<script src="<c:url value="/resources/js/jquery.scrollUp.min.js"/>"></script>
+	
 	<script src="<c:url value="/resources/js/price-range.js"/>"></script>
     <script src="<c:url value="/resources/js/jquery.prettyPhoto.js"/>"></script>
     <script src="<c:url value="/resources/js/main.js"/>"></script>

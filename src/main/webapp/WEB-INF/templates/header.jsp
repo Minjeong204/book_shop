@@ -70,7 +70,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-9">
-						<div class="navbar-header">
+ 						<div class="navbar-header">
 							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 								<span class="sr-only">Toggle navigation</span>
 								<span class="icon-bar"></span>
@@ -78,11 +78,22 @@
 								<span class="icon-bar"></span>
 							</button>
 						</div>
-						<div class="mainmenu pull-left">
-							<ul class="nav navbar-nav collapse navbar-collapse">
-								<li><a href="<c:url value="/"/>" class="active">Home</a></li>
-								<li class="dropdown"><a href="<c:url value="/productAll"/>">Books<!-- <i class="fa fa-angle-down"></i> --></a>
-								<li class="dropdown"><a href="<c:url value="/board/listboards"/>">Q&A<!-- <i class="fa fa-angle-down"></i> --></a>
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						<div class="panel panel-default">
+<!-- 							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordian"
+										href="#novel"> <span class="badge pull-right"><i
+											class="fa fa-plus"></i></span> 소설
+									</a>
+								</h4>
+							</div> kks -->
                              <c:if
 									test="${pageContext.request.userPrincipal.name == 'admin'}">
 									<li class="dropdown"><a

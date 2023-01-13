@@ -29,14 +29,14 @@
 										<h2>${product.price}원</h2>
 										<p>${product.bookName}</p>
 										<a href="${contextPath}/productDetail?bookNo=${product.bookNo}" class="btn btn-default"><i
-											class="fa fa-search"></i>상세 보기</a>
+											class="fa fa-search"></i>3333333333</a>
 									</div>
-									<div class="product-overlay">
+ 									<div class="product-overlay">
 										<div class="overlay-content">
 											<h2>${product.price}원</h2>
 											<p>${product.bookName}</p>
 											<a href="${contextPath}/productDetail?bookNo=${product.bookNo}" class="btn btn-default add-to-cart"><i
-												class="fa fa-search"></i>상세 보기</a>
+												class="fa fa-search"></i>22222222</a>
 										</div>
 									</div>
 								</div>

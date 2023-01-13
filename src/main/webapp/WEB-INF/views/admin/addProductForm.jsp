@@ -63,32 +63,6 @@ th {
                <tr>
                <tr>
                   <th>카테고리</th>
-                  <td colspan="2"><select name="category" id="category">
-                        <optgroup label="소설">
-                           <option value="novel1">나라별 소설</option>
-                           <option value="novel2">고전/문학</option>
-                           <option value="novel3">장르소설</option>
-                        </optgroup>
-                        <optgroup label="시/에세이">
-                           <option value="poem1">한국시</option>
-                           <option value="poem2">외국시</option>
-                           <option value="poem3">여행 에세이</option>
-                        </optgroup>
-                        <optgroup label="자기계발">
-                           <option value="selfDevelopment1">대화/협상</option>
-                           <option value="selfDevelopment2">자기능력계발</option>
-                        </optgroup>
-                        <optgroup label="인문">
-                           <option value="liberal1">인문일반</option>
-                           <option value="liberal2">심리</option>
-                           <option value="liberal3">철학</option>
-                        </optgroup>
-                        <optgroup label="어린이">
-                           <option value="child1">어린이(공통)</option>
-                           <option value="child2">초등</option>
-                        </optgroup>
-                  </select>
-                     <p></td>
                </tr>
                <tr>
                   <th><p>책 이름</th>
