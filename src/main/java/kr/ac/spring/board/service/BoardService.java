@@ -10,10 +10,11 @@ import org.springframework.stereotype.Service;
 
 import kr.ac.spring.board.dao.BoardDAO;
 import kr.ac.spring.board.vo.BoardVO;
+import kr.ac.spring.board.vo.Criteria;
 import kr.ac.spring.board.vo.Pagination;
 
 @Service("boardService")
-public class BoardService {
+public interface BoardService {
 	@Autowired
 	BoardDAO boardDAO;
 	
@@ -72,5 +73,22 @@ public class BoardService {
 		// TODO Auto-generated method stub
 		List<BoardVO> boardsList =  boardDAO.selectAllBoardListById(pagination, id);
         return boardsList;
+        
+        
+        
 	}
+	
+	public void register(BoardVO board);
+	
+	public BoardVO get(Long bno);
+	
+	public boolean modify(BoardVO bno);
+
+	public boolean remove(Long bno);
+	
+	//public List<BoardVO> getList();
+	
+	public List<BoardVO> getList(Criteria cri);
+	
+	public int getTotal(Criteria cri);
 }

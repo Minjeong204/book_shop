@@ -16,17 +16,22 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import kr.ac.spring.board.service.BoardService;
 import kr.ac.spring.board.vo.BoardVO;
+import kr.ac.spring.board.vo.Criteria;
+import kr.ac.spring.board.vo.PageDTO;
 import kr.ac.spring.board.vo.Pagination;
 
 @Controller("boardController")
@@ -272,5 +277,60 @@ public class BoardController {
 		mav.addObject("boardlist", boardList);
 		mav.addObject("pagination", pagination);
 		return mav;
+		
+		//요 아래서부터 추가부분
+		
+		
+		/*@GetMapping("/list")
+		public void list (Criteria cri, Model model) {
+			log.info("list : " + cri);
+			model.addAttribute("list" , service.getList(cri));
+			model.addAttribute("pageMaker",new PageDTO(cri,123));
+			
+			int total = service.getTotal(cri);
+			
+			log.info("total:"+total);
+			
+			model.addAttribute("pageMaker", new PageDTO(cri, total));
+		}*/
+		
+		/*
+		 * @GetMapping({"/get", "/modify"}) public void get(@RequestParam("bno") Long
+		 * bno, @ModelAttribute("cri") Criteria cri, Model model) {
+		 * 
+		 * log.info("get or modify"); model.addAttribute("board", service.get(bno)); }
+		 */
+		
+		/*
+		 * @PostMapping("/modify") public String modify(BoardVO
+		 * board, @ModelAttribute("cri") Criteria cri, RedirectAttributes rttr) {
+		 * 
+		 * log.info("modify: " + board);
+		 * 
+		 * if(service.modify(board)) { rttr.addFlashAttribute("result", "success"); }
+		 * 
+		 * rttr.addAttribute("pageNum", cri.getPageNum()); rttr.addAttribute("amount",
+		 * cri.getAmount()); rttr.addAttribute("type", cri.getType());
+		 * rttr.addAttribute("keyword", cri.getKeyword());
+		 * 
+		 * return "redirect:/board/list" + cri.getListLink(); }
+		 */
+		
+		/*
+		 * @PostMapping("/remove") public String remove(@RequestParam("bno") Long bno,
+		 * Criteria cri,RedirectAttributes rttr) {
+		 * 
+		 * log.info("remove: " + bno);
+		 * 
+		 * if(service.remove(bno)) { rttr.addFlashAttribute("result", "success"); }
+		 * 
+		 * rttr.addAttribute("pageNum", cri.getPageNum()); rttr.addAttribute("amount",
+		 * cri.getAmount()); rttr.addAttribute("type", cri.getType());
+		 * rttr.addAttribute("keyword", cri.getKeyword());
+		 * 
+		 * return "redirect:/board/list" + cri.getListLink(); }
+		 */
+		
+		
 	}
 }
