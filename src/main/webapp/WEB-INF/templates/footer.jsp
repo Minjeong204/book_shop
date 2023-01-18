@@ -6,7 +6,21 @@
 		window.open("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.3527186273013!2d127.0282712156468!3d37.49959833571589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca15796fe3091%3A0xaa658b05561b79ab!2z7ISc7Jq47Yq567OE7IucIOqwleuCqOq1rCDsl63sgrzrj5kg7YWM7Zek656A66GcN-q4uCA3!5e0!3m2!1sko!2skr!4v1566442206562!5m2!1sko!2skr", "", "width=500 height=500");
 	}
 </script>
-<footer id="footer">
+<!-----------Footer------------>
+<div class="container footer">
+    <div class="footer-content text-center">
+    <h2>let's stay in touch</h2>
+    <p>Get updates on sales specials and more</p>
+
+    <input type="text"> <br>
+
+    <button class="buy-now-btn3">Submit</button>
+</div>
+</div>
+
+
+<p class="copyright text-center">Copiright All Right rserved By Sabbir R Tahsan</p>
+<!-- <footer id="footer"> -->
 	<!--Footer-->
 	<%-- <div class="footer-top">
 			<div class="container">
@@ -88,13 +102,13 @@
 			</div>
 		</div> --%>
 
-	<div class="footer-widget">
+<%-- 	<div class="footer-widget">
 		<div class="container">
 			<div class="logo pull-center" align="center">
 				<a href="<c:url value="/"/>"><img width="300" height=""
 					src="<c:url value="/resources/images/home/GenieBook.png"/>" alt="" /></a>
 			</div>
-			<div class="row">
+			<div class="row"> --%>
 				<!-- <div class="col-sm-2">
 						<div class="single-widget">
 							<h2>회사 소개</h2>
@@ -153,7 +167,7 @@
 							</form>
 						</div>
 					</div> -->
-				<div align="center">
+<!-- 				<div align="center">
 					<br>㈜지니북 <br>사업자등록번호 : 220-90-07535 <br>대표전화 :
 					02-561-1911 / 팩스 : 02-538-2613 <br>email: geniebook.book@gmail.com <br>주소
 					: 서울 강남구 테헤란로 7길 7(역삼동 에스코빌딩 6층)
@@ -175,5 +189,5 @@
 		</div>
 	</div>
 
-</footer>
+</footer> -->
 <!--/Footer-->

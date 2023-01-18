@@ -8,7 +8,20 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 </head>
+
 <body>
+
+<div class="container footer">
+    <div style= "display:block;float:right;width:300px;height:150px" class="footer-content text-center">
+
+	<button style= "margin-top:0px;height:50px;width:100px;float:right;height:35px;display:block;float:right"; class="buy-now-btn3">Submit</button>
+
+    <input style= "position:absolute;height:35px;float:right;width:200px;display:block;" type="text"> <br>
+
+    
+</div>
+
+<%-- </div>
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-3">
@@ -117,5 +130,5 @@
 		</div>
 	</div>
 
-</body>
-</html>
+</body> --%>
+</html> 

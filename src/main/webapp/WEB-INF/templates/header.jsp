@@ -13,7 +13,7 @@
 	}
 
 </script>
-<header id="header"><!--header-->
+	<%-- <header id="header">header 
 		
 		
 		<div class="header-middle"><!--header-middle-->
@@ -37,7 +37,7 @@
 										<li><a class="nav-link" href="<c:url value="/memberInfo_ui"/> "><i class="fa fa-user"></i>회원정보</a></li>
 									</c:if>
 								</c:if>
-								<%-- <li><a href="<c:url value="/cart"/>"><i class="fa fa-shopping-cart"></i> Cart</a></li> --%>
+								<li><a href="<c:url value="/cart"/>"><i class="fa fa-shopping-cart"></i> Cart</a></li>
 								<c:if test="${pageContext.request.userPrincipal.name != null}">
 									<c:if test="${pageContext.request.userPrincipal.name == 'admin'}">
 										<li class="nav-item"><a class="nav-link" href="<c:url value="/admin/adminManager"/> ">관리자기능</a></li>
@@ -176,4 +176,22 @@
 				</div>
 			</div>
 		</div>
-	</section><!--/slider-->
+	</section><!--/slider--> --%>
+	    <!----------------Nav-- Bar------------>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light space ">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="https://i.ibb.co/qrwZZNB/logo.png" alt="logo" border="0"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <li class="nav-item"> <a class="nav-link" href="<c:url value="/login"/> ">Home</a>
+              <li class="nav-item"> <a class="nav-link" href="<c:url value="/login"/> ">로그인</a>
+<li class="nav-item"> <a class="nav-link" href="<c:url value="/registerForm_member"/> ">회원가입</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+	
