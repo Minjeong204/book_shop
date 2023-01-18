@@ -2,10 +2,7 @@ package kr.ac.spring.admin.controller;
 
 import java.io.File;
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -22,7 +19,6 @@ import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.mail.javamail.MimeMessagePreparator;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -36,6 +32,7 @@ import kr.ac.spring.member.service.MemberService;
 import kr.ac.spring.member.vo.AddrVO;
 import kr.ac.spring.member.vo.MemberVO;
 import kr.ac.spring.product.service.ProductService;
+import kr.ac.spring.product.vo.Criteria;
 import kr.ac.spring.product.vo.ProductVO;
 
 @Controller
@@ -53,16 +50,16 @@ public class AdminController {
 
 	@Autowired
 	private JavaMailSenderImpl mailSender;
-	
+
 	private static final String PRODUCT_IMAGE_REPO = "resources/images/BookImg";
 
-	/*-------------------------- admin의 회원 관리 ----------------------------*/
+	/*-------------------------- admin�쓽 �쉶�썝 愿�由� ----------------------------*/
 	@RequestMapping(value = "/adminManager")
-	public String adminManager(HttpServletRequest request, Model model) throws Exception {
+	public String adminManager(HttpServletRequest request, Model model, Criteria cri) throws Exception {
 		System.out.println(request.getServletPath());
 
 		List<MemberVO> memberList = adminService.getMemberAllInfo();
-		List<ProductVO> productList = productService.listProductAll();
+		List<ProductVO> productList = productService.listProductAll(cri);
 		
 		model.addAttribute("memberList", memberList);
 		model.addAttribute("productList", productList);
@@ -88,18 +85,18 @@ public class AdminController {
 
 		memberVO = memberService.selectUserInfo(id);
 		addrVO = memberService.selectUserInfo_Addr(id);
-		/* 상품관련, 게시판 정보 추가 예정 */
+		/* �긽�뭹愿��젴, 寃뚯떆�뙋 �젙蹂� 異붽� �삁�젙 */
 
 		model.addAttribute("memberVO", memberVO);
 		model.addAttribute("addrVO", addrVO);
-		
-		System.out.println("receive: "+memberVO.getReceive_email());
-		/* 상품관련, 게시판 정보 추가 예정 */
+
+		System.out.println("receive: " + memberVO.getReceive_email());
+		/* �긽�뭹愿��젴, 寃뚯떆�뙋 �젙蹂� 異붽� �삁�젙 */
 
 		return "memberDetail";
 	}
 
-	/*-------------------------- 메일 전송 ----------------------------*/
+	/*-------------------------- 硫붿씪 �쟾�넚 ----------------------------*/
 	@RequestMapping(value = "/mailSending/{id}")
 	public String mailSending(HttpServletRequest request, @PathVariable("id") String id, Model model) {
 		System.out.println(request.getServletPath());
@@ -175,7 +172,7 @@ public class AdminController {
 		}
 	}
 
-	/*-------------------------- Admin의 상품 관리 --------------------------*/
+	/*-------------------------- Admin�쓽 �긽�뭹 愿�由� --------------------------*/
 
 	@RequestMapping(value = "/addProductForm")
 	public String addProductForm(HttpServletRequest request, HttpServletResponse response) {
@@ -229,7 +226,7 @@ public class AdminController {
 		response.setContentType("text/html; charset=UTF-8");
 		ModelAndView mav = new ModelAndView("productDetail_admin");
 		mav.addObject("updateStatus", adminService.updateProduct(productVO));
-		mav.addObject("bookNo",bookNo);
+		mav.addObject("bookNo", bookNo);
 		System.out.println(request.getServletPath());
 		return mav;
 	}
@@ -276,10 +273,10 @@ public class AdminController {
 		productVO = productService.bookDetail(bookNo);
 
 		HashMap<String, String> categories = new HashMap<String, String>();
-		String[][] categories_String = { { "novel1", "나라별소설" }, { "novel2", "고전/문학" }, { "novel3", "장르소설" },
-				{ "poem1", "한국시" }, { "poem2", "외국시" }, { "poem3", "여행 에세이" }, { "selfDevelopment1", "대화/협상" },
-				{ "selfDevelopment2", "자기능력계발" }, { "liberal1", "인문일반" }, { "liberal2", "심리" }, { "liberal3", "철학" },
-				{ "child1", "어린이(공통)" }, { "child2", "초등" }, };
+		String[][] categories_String = { { "novel1", "�굹�씪蹂꾩냼�꽕" }, { "novel2", "怨좎쟾/臾명븰" }, { "novel3", "�옣瑜댁냼�꽕" },
+				{ "poem1", "�븳援��떆" }, { "poem2", "�쇅援��떆" }, { "poem3", "�뿬�뻾 �뿉�꽭�씠" },
+				{ "selfDevelopment1", "���솕/�삊�긽" }, { "selfDevelopment2", "�옄湲곕뒫�젰怨꾨컻" }, { "liberal1", "�씤臾몄씪諛�" },
+				{ "liberal2", "�떖由�" }, { "liberal3", "泥좏븰" }, { "child1", "�뼱由곗씠(怨듯넻)" }, { "child2", "珥덈벑" }, };
 
 		for (String[] c : categories_String) {
 			categories.put(c[0], c[1]);
@@ -301,12 +298,13 @@ public class AdminController {
 			imageFileName = mFile.getOriginalFilename();
 			File file = new File(path + "/" + fileName);
 			if (mFile.getSize() != 0) { // File Null Check
-				if (!file.exists()) { // 경로 상에 파일이 존재하지 않다면
-					if (file.getParentFile().mkdirs()) { // 파일의 경로에 해당하는 디렉토리를 모두 생성(mkdirs는 경로상 폴더를 모두 만들어줌)
-						file.createNewFile(); // 파일 생성
+				if (!file.exists()) { // 寃쎈줈 �긽�뿉 �뙆�씪�씠 議댁옱�븯吏� �븡�떎硫�
+					if (file.getParentFile().mkdirs()) { // �뙆�씪�쓽 寃쎈줈�뿉 �빐�떦�븯�뒗 �뵒�젆�넗由щ�� 紐⑤몢 �깮�꽦(mkdirs�뒗 寃쎈줈�긽
+															// �뤃�뜑瑜� 紐⑤몢 留뚮뱾�뼱以�)
+						file.createNewFile(); // �뙆�씪 �깮�꽦
 					}
 				}
-				mFile.transferTo(new File(path + "/"+ imageFileName)); // 파일을 이동시킨다.
+				mFile.transferTo(new File(path + "/" + imageFileName)); // �뙆�씪�쓣 �씠�룞�떆�궓�떎.
 			}
 		}
 		return imageFileName;
@@ -322,12 +320,13 @@ public class AdminController {
 			imageFileName = mFile.getOriginalFilename();
 			File file = new File(path + "/" + fileName);
 			if (mFile.getSize() != 0) { // File Null Check
-				if (!file.exists()) { // 경로 상에 파일이 존재하지 않다면
-					if (file.getParentFile().mkdirs()) { // 파일의 경로에 해당하는 디렉토리를 모두 생성(mkdirs는 경로상 폴더를 모두 만들어줌)
-						file.createNewFile(); // 파일 생성
+				if (!file.exists()) { // 寃쎈줈 �긽�뿉 �뙆�씪�씠 議댁옱�븯吏� �븡�떎硫�
+					if (file.getParentFile().mkdirs()) { // �뙆�씪�쓽 寃쎈줈�뿉 �빐�떦�븯�뒗 �뵒�젆�넗由щ�� 紐⑤몢 �깮�꽦(mkdirs�뒗 寃쎈줈�긽
+															// �뤃�뜑瑜� 紐⑤몢 留뚮뱾�뼱以�)
+						file.createNewFile(); // �뙆�씪 �깮�꽦
 					}
 				}
-				mFile.transferTo(new File(path + "/" + imageFileName)); // 파일을 이동시킨다.
+				mFile.transferTo(new File(path + "/" + imageFileName)); // �뙆�씪�쓣 �씠�룞�떆�궓�떎.
 			}
 		}
 		return imageFileName;

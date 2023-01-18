@@ -1,8 +1,10 @@
 package kr.ac.spring.product.controller;
 
 import java.util.List;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -12,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import kr.ac.spring.product.service.ProductService;
+import kr.ac.spring.product.vo.Criteria;
 import kr.ac.spring.product.vo.ProductVO;
 
 @Controller
@@ -19,7 +22,7 @@ public class ProductControllerImpl implements ProductController {
 	@Autowired
 	private ProductService productService;
 
-	// 세션 이용시 추가
+	// �꽭�뀡 �씠�슜�떆 異붽�
 	// HttpSession session=request.getSession();
 	// session.setAttribute("productVO", productVO);
 
@@ -35,9 +38,10 @@ public class ProductControllerImpl implements ProductController {
 	}
 
 	@RequestMapping(value = "/category/{categoryName}/{categoryNum}", method = RequestMethod.GET)
-	public ModelAndView productByCategory(@PathVariable("categoryName") String categoryName, @PathVariable("categoryNum") String num, HttpServletRequest request,
-			HttpServletResponse response) throws Exception {
-		String category = categoryName+num;
+	public ModelAndView productByCategory(@PathVariable("categoryName") String categoryName,
+			@PathVariable("categoryNum") String num, HttpServletRequest request, HttpServletResponse response)
+			throws Exception {
+		String category = categoryName + num;
 		System.out.println(category);
 		List<ProductVO> productList = productService.listProductByCategory(category);
 		ModelAndView mav = new ModelAndView("productByCategory");
@@ -47,14 +51,16 @@ public class ProductControllerImpl implements ProductController {
 
 	@Override
 	@RequestMapping("/productAll")
-	public ModelAndView productAll(HttpServletRequest request) throws Exception {
+	public ModelAndView productAll(HttpServletRequest request, Criteria cri) throws Exception {
 		System.out.println("productAll");
 		
+		
 		String viewName = (String) request.getAttribute("viewName");
-		List<ProductVO> productList = productService.listProductAll();
+		List<ProductVO> productList = productService.listProductAll(cri);
 		
 		ModelAndView mav = new ModelAndView(viewName);
 		mav.addObject("productList", productList);
+		System.out.println(productList);
 		return mav;
 	}
 }

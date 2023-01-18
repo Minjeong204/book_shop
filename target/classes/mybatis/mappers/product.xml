@@ -16,7 +16,6 @@
 		<result property="stock" column="stock" />
 		<result property="imageFileName" column="imageFileName" />
 	</resultMap>
-
 	<!-- ************************************************* -->
 	<insert id="addProduct" parameterType="productVO">
   		<![CDATA[
@@ -53,9 +52,11 @@
 
 	<!-- 상품 전체 선택 -->
 	<select id="selectProductListAll" resultMap="productResult">
-				<![CDATA[
-			SELECT * FROM product order by bookNo
+				 <![CDATA[
+			select *  from (select /*+INDEX_DESC(product pk_product) */bookno, category, bookname, writer,  publisher, pubyear, price, stock, imagefilename, description from product 
+			where  ( bookname like '%'||#{keyword, jdbcType=VARCHAR}||'%' ))
 		]]>
+
 	</select>
 
 	<!-- 카데고리 별 상품 선택 -->
@@ -65,12 +66,12 @@
        		select * from product where category = #{category} order by bookNo
 	   ]]>
 	</select>
-
+	<!-- 특정 id 상품 검색 -->
 	<!-- 특정 id 상품 검색 -->
 	<select id="selectProductByBookNo" parameterType="int"
 		resultType="productVO">
-		<![CDATA[
-			select * from product where bookNo = #{bookNo}
-		]]>
+      <![CDATA[
+         select * from product where bookNo = #{bookNo}
+      ]]>
 	</select>
 </mapper>

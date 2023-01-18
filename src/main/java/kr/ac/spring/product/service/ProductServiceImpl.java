@@ -3,13 +3,13 @@ package kr.ac.spring.product.service;
 
 import java.util.List;
 
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import kr.ac.spring.product.dao.ProductDAO;
+import kr.ac.spring.product.vo.Criteria;
 import kr.ac.spring.product.vo.ProductVO;
 
 @Service("ProductService")
@@ -30,8 +30,8 @@ public class ProductServiceImpl implements ProductService {
 	}
 
 	@Override
-	public List<ProductVO> listProductAll() throws Exception {
-		List<ProductVO> productList = productDAO.selectProductListAll();
+	public List<ProductVO> listProductAll(Criteria cri) throws Exception {
+		List<ProductVO> productList = productDAO.selectProductListAll(cri);
 		return productList;
 	}
 	@Override

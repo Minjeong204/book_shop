@@ -19,6 +19,7 @@ public class ProductVO {
 	private String description;
 	private String imageFileName;
 
+
 	// Constructors
 	public ProductVO() {
 	}
@@ -52,13 +53,6 @@ public class ProductVO {
 		this.bookNo = bookNo;
 		this.imageFileName = imageFileName;
 	}
-	
-	@Override
-	public String toString() {
-		return "ProductVO [bookNo=" + bookNo + ", category=" + category + ", bookName=" + bookName + ", writer="
-				+ writer + ", publisher=" + publisher + ", pubYear=" + pubYear + ", price=" + price + ", stock=" + stock
-				+ ", description=" + description + ", imageFileName=" + imageFileName + "]";
-	}
 
 	// setters and getters
 	public int getBookNo() {
@@ -89,11 +83,11 @@ public class ProductVO {
 			this.price = Integer.parseInt(object.toString());
 		} else if (property.equals("stock")) {
 			this.stock = Integer.parseInt(object.toString());
-		} else if(property.equals("description")) {
+		} else if (property.equals("description")) {
 			this.description = (String) object;
-		} else if(property.equals("bookNo")) {
+		} else if (property.equals("bookNo")) {
 			this.bookNo = Integer.parseInt(object.toString());
-		} else if(property.equals("imageFileName")) {
+		} else if (property.equals("imageFileName")) {
 			this.imageFileName = (String) object;
 		}
 	}
