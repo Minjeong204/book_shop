@@ -12,5 +12,5 @@ public interface ProductService {
 	public List<ProductVO> listProductAll(Criteria cri) throws Exception;
 	public ProductVO bookDetail(int bookNo) throws Exception;
 	public List<ProductVO> listProductByCategory(String category);
-
+	public int getTotal(Criteria cri);
 }

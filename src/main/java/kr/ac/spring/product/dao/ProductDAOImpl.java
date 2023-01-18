@@ -10,7 +10,6 @@ import org.springframework.stereotype.Repository;
 import kr.ac.spring.product.vo.Criteria;
 import kr.ac.spring.product.vo.ProductVO;
 
-
 @Repository("ProductDAO")
 public class ProductDAOImpl implements ProductDAO {
 	@Autowired
@@ -20,7 +19,7 @@ public class ProductDAOImpl implements ProductDAO {
 	public List<ProductVO> selectRecommendationList() throws DataAccessException {
 		return sqlSession.selectList("mapper.product.selectBookListByRecommendation");
 	}
-	
+
 	@Override
 	public List<ProductVO> selectProductListAll(Criteria cri) throws DataAccessException {
 		return sqlSession.selectList("mapper.product.selectProductListAll", cri);
@@ -28,13 +27,16 @@ public class ProductDAOImpl implements ProductDAO {
 
 	@Override
 	public ProductVO selectBooksDetail(int bookNo) throws DataAccessException {
-		return sqlSession.selectOne("mapper.product.selectProductByBookNo",bookNo);
+		return sqlSession.selectOne("mapper.product.selectProductByBookNo", bookNo);
 	}
 
 	@Override
 	public List<ProductVO> selectProductByCategory(String category) {
 		return sqlSession.selectList("mapper.product.selectBookListByCategory", category);
 	}
-	
+
+	public int getTotal(Criteria cri) {
+		return sqlSession.selectOne("mapper.product.getTotalCount", cri);
+	}
 
 }

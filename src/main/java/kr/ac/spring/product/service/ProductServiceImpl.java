@@ -1,6 +1,5 @@
 package kr.ac.spring.product.service;
 
-
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,16 +12,17 @@ import kr.ac.spring.product.vo.Criteria;
 import kr.ac.spring.product.vo.ProductVO;
 
 @Service("ProductService")
-@Transactional(propagation=Propagation.REQUIRED)
+@Transactional(propagation = Propagation.REQUIRED)
 public class ProductServiceImpl implements ProductService {
 	@Autowired
 	private ProductDAO productDAO;
-	
+
 	@Override
 	public List<ProductVO> listRecommendation() throws Exception {
 		List<ProductVO> productList = productDAO.selectRecommendationList(); // ��õ �׸� ������
 		return productList;
 	}
+
 	@Override
 	public ProductVO bookDetail(int bookNo) throws Exception {
 		ProductVO product = productDAO.selectBooksDetail(bookNo);
@@ -34,10 +34,16 @@ public class ProductServiceImpl implements ProductService {
 		List<ProductVO> productList = productDAO.selectProductListAll(cri);
 		return productList;
 	}
+
 	@Override
 	public List<ProductVO> listProductByCategory(String category) {
 		List<ProductVO> productList = productDAO.selectProductByCategory(category);
 		return productList;
 	}
-	
+
+	@Override
+	public int getTotal(Criteria cri) {
+		return productDAO.getTotal(cri);
+	}
+
 }

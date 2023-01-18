@@ -53,10 +53,14 @@
 	<!-- 상품 전체 선택 -->
 	<select id="selectProductListAll" resultMap="productResult">
 				 <![CDATA[
-			select *  from (select /*+INDEX_DESC(product pk_product) */bookno, category, bookname, writer,  publisher, pubyear, price, stock, imagefilename, description from product 
-			where  ( bookname like '%'||#{keyword, jdbcType=VARCHAR}||'%' ))
+			select *  from (select /*+INDEX_DESC(product pk_product) */ rownum rn, bookno, category, bookname, writer,  publisher, pubyear, price, stock, imagefilename, description from product 
+			where bookname like '%'||#{keyword, jdbcType=VARCHAR}||'%' and rownum <=#{pageNum} * #{amount}) where rn > (#{pageNum}-1)*#{amount}
 		]]>
 
+	</select>
+	<select id="getTotalCount" resultType="int">
+		select count(*) from product where bookname like '%'||#{keyword,
+		jdbcType=VARCHAR}||'%' and bookno > 0
 	</select>
 
 	<!-- 카데고리 별 상품 선택 -->

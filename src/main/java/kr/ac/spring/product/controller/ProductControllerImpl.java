@@ -15,6 +15,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import kr.ac.spring.product.service.ProductService;
 import kr.ac.spring.product.vo.Criteria;
+import kr.ac.spring.product.vo.PageDTO;
 import kr.ac.spring.product.vo.ProductVO;
 
 @Controller
@@ -57,9 +58,11 @@ public class ProductControllerImpl implements ProductController {
 		
 		String viewName = (String) request.getAttribute("viewName");
 		List<ProductVO> productList = productService.listProductAll(cri);
-		
+		int total = productService.getTotal(cri);
 		ModelAndView mav = new ModelAndView(viewName);
 		mav.addObject("productList", productList);
+		mav.addObject("pageMaker", new PageDTO(cri, total));
+		System.out.println(total);
 		System.out.println(productList);
 		return mav;
 	}
