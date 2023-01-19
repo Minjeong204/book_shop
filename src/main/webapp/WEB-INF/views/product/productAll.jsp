@@ -2,7 +2,11 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <c:set var="contextPath" value="${pageContext.request.contextPath}" />
+<<<<<<< HEAD
 <%@ page import="kr.ac.spring.product.vo.Criteria"%>
+=======
+
+>>>>>>> front_sup
 <section>
 	<div class="container">
 		<div class="row">
@@ -34,11 +38,15 @@
 <%-- 											<a
 												href="${contextPath}/productDetail?bookNo=${product.bookNo}"
 												class="btn btn-default add-to-cart"><i
+<<<<<<< HEAD
 												class="fa fa-search"></i>상세보기</a> --%>
 											<a
 												href="${contextPath}/productDetail?bookNo=${product.bookNo}"
 												class="btn btn-default add-to-cart move"><i
 												class="fa fa-search"></i>상세보기</a>
+=======
+												class="fa fa-search"></i>ㅇㅁㅇㄴㅁㅇㅁㄴㅇㅁㄴㅇ</a>
+>>>>>>> front_sup
 										</div>
 									</div>
 								</div>

@@ -96,7 +96,7 @@ button, .button {
 					</tr>
 					<tr>
 						<th>카테고리</th>
-						<td><select name="category" id="category"
+	- 						<td><select name="category" id="category"
 							style="width: 500px;">
 								<optgroup label="소설">
 									<option value="novel1">나라별 소설</option>

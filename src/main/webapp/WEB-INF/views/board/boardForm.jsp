@@ -9,7 +9,7 @@
 
 <head>
 <meta charset="UTF-8">
-<title>글쓰기창</title>
+<title>글쓰기</title>
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script type="text/javascript">
 	 function readURL(input) {

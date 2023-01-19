@@ -8,15 +8,27 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 </head>
+
 <body>
+
+<div class="container footer">
+    <div style= "display:block;float:right;width:300px;height:150px" class="footer-content text-center">
+
+	<button style= "margin-top:0px;height:50px;width:100px;float:right;height:35px;display:block;float:right"; class="buy-now-btn3">Submit</button>
+
+    <input style= "position:absolute;height:35px;float:right;width:200px;display:block;" type="text"> <br>
+
+    
+</div>
+
+<%-- </div>
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-3">
 				<div class="left-sidebar">
 				<p><p><p><p><p><p>
-					<h2>국내외 서적</h2>
+ 					<h2>국내외 서적</h2>
 					<div class="panel-group category-products" id="accordian">
-						<!--category-productsr-->
 						<div class="panel panel-default">
 							<div class="panel-heading">
 								<h4 class="panel-title">
@@ -25,8 +37,8 @@
 											class="fa fa-plus"></i></span> 소설
 									</a>
 								</h4>
-							</div>
-							<div id="novel" class="panel-collapse collapse">
+							</div> 
+ 							<div id="novel" class="panel-collapse collapse">
 								<div class="panel-body">
 									<ul>
 										<li><a href="<c:url value="/category/novel/1"/>">나라별 소설 </a></li>
@@ -118,5 +130,5 @@
 		</div>
 	</div>
 
-</body>
-</html>
+</body> --%>
+</html> 
