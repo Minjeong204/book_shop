@@ -2,6 +2,7 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <c:set var="contextPath" value="${pageContext.request.contextPath}" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <%-- <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -76,10 +77,60 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400&display=swap" rel="stylesheet">
 
+	<link href="<c:url value="/resources/css/hamburger.css"/>"
+		rel="stylesheet">
+	
+	<script src="<c:url value="/resources/js/hamburger.js"/>"></script>
+	
+
 </head>
 <body>
     
 <!--------------------Carousel-------------->
+<div id="menu-container">
+   <div id="menu-wrapper">
+      <div id="hamburger-menu"><span></span><span></span><span></span></div>
+      <!-- hamburger-menu -->
+   </div>
+   <!-- menu-wrapper -->
+   <ul class="menu-list accordion">
+      <li id="nav1" class="toggle accordion-toggle"> 
+         <span class="icon-plus"></span>
+         <a class="menu-link" href="#">Menu1</a>
+      </li>
+      <!-- accordion-toggle -->
+      <ul class="menu-submenu accordion-content">
+         <li><a class="head" href="#">Submenu1</a></li>
+         <li><a class="head" href="#">Submenu2</a></li>
+         <li><a class="head" href="#">Submenu3</a></li>
+      </ul>
+      <!-- menu-submenu accordon-content-->
+      <li id="nav2" class="toggle accordion-toggle"> 
+         <span class="icon-plus"></span>
+         <a class="menu-link" href="#">Menu2</a>
+      </li>
+      <!-- accordion-toggle -->
+      <ul class="menu-submenu accordion-content">
+         <li><a class="head" href="#">Submenu1</a></li>
+         <li><a class="head" href="#">Submenu2</a></li>
+      </ul>
+      <!-- menu-submenu accordon-content-->
+           <li id="nav3" class="toggle accordion-toggle"> 
+         <span class="icon-plus"></span>
+         <a class="menu-link" href="#">Menu3</a>
+      </li>
+      <!-- accordion-toggle -->
+      <ul class="menu-submenu accordion-content">
+         <li><a class="head" href="#">Submenu1</a></li>
+         <li><a class="head" href="#">Submenu2</a></li>
+         <li><a class="head" href="#">Submenu3</a></li>
+         <li><a class="head" href="#">Submenu4</a></li>
+      </ul>
+      <!-- menu-submenu accordon-content-->
+   </ul>
+   <!-- menu-list accordion-->
+</div>
+
 <div class="container space">
     <div id="carouselExampleIndicators" class="carousel slide carousal-bg" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -124,7 +175,7 @@
             <div class="col-xl-7">
                 <h1 class="display-4 fw-normal">X-BOX</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat repellat amet praesentium saepe voluptate obcaecati facere blanditiis accusantium nihil quaerat cum, rem eos sequi quas animi! Reprehenderit illum maxime tempore.</p>
-                   
+
                 <h3 class="price">389$</h3>
 
                 <button class="buy-now-btn">Buy Now</button>
@@ -150,37 +201,7 @@
 </div>
 
 
-<!--------------------Catarogise----------------->
 
-
-<div class="container catagories space">
-    <h2 class="cata">Catagories</h2>
- <div class="row">
-     <div class="col-xl-4">
-       
-         <div class="cat1 d-flex justify-content-between align-items-center">
-            
-             <h1>Watche</h1>
-             <img src="https://i.ibb.co/Vp9ZfWr/watch.png" alt="watch" border="0">
-         </div>
-     </div>
-
-     <div class="col-xl-4">
-    
-         <div class="cat2 d-flex justify-content-between align-items-center">
-             <h1>Bag</h1>
-             <img src="https://i.ibb.co/JFsLgWw/bag.png" alt="bag" border="0">
-         </div>
-     </div>
-
-     <div class="col-xl-4">
-         <div class="cat3 d-flex justify-content-between align-items-center">
-             <h1>Shoes</h1>
-             <img src="https://i.ibb.co/mBtKTsd/shoes.png" alt="shoes" border="0">
-         </div>
-     </div>
- </div>
-</div>
 
 <!----------Shoping----------------->
 

@@ -288,7 +288,7 @@ var GMaps = (function(global) {
           left = position[0] + e.pixel.x - 15,
           top = position[1] + e.pixel.y- 15;
 
-      context_menu_element.style.left = left + "px";
+      context_menu_element.style.left = left + "5.5%";
       context_menu_element.style.top = top + "px";
 
       context_menu_element.style.display = 'block';

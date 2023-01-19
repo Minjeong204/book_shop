@@ -181,7 +181,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light space ">
         <div class="container">
-          <a class="navbar-brand" href="#"><img src="https://i.ibb.co/qrwZZNB/logo.png" alt="logo" border="0"></a>
+          <a style= "margin-left:150px";class="navbar-brand" href="./"><img src="https://i.ibb.co/qrwZZNB/logo.png" alt="logo" border="0"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -190,8 +190,34 @@
               <li class="nav-item"> <a class="nav-link" href="<c:url value="/login"/> ">Home</a>
               <li class="nav-item"> <a class="nav-link" href="<c:url value="/login"/> ">로그인</a>
 <li class="nav-item"> <a class="nav-link" href="<c:url value="/registerForm_member"/> ">회원가입</a>
+<div style="height:0px"class="container space">
+
+	
+
+    <div style="top:0px;right:750px;"class="footer-content text-center">
+
+    <input type="text" placeholder="상품명 입력"style="width:200px;padding-left:10px;position:absolute;left:-40px;top:8.5px;height:35px">
+    
+    <button style="position:absolute;left:380px;top:-0.5px;"class="buy-now-btn3">Submit</button>
+
+    
+</div>
             </div>
           </div>
         </div>
       </nav>
+
+
+<!-- menu-container -->
+<!-- <div style="width:auto;height:0px"class="container space">
+
+    <div style= "position:absolute;float:right;width:320px;height:50px" class="footer-content text-center">
+
+	<button style= "margin-top:0px;height:50px;width:100px;float:right;height:35px;display:block;float:right"; class="buy-now-btn3">Submit</button>
+
+    <input style= "position:absolute;height:35px;float:right;width:200px;display:block;" type="text"> <br>
+
+    
+</div> -->
+      
 	

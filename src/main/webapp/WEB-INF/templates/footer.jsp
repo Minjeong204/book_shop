@@ -7,16 +7,6 @@
 	}
 </script>
 <!-----------Footer------------>
-<div class="container footer">
-    <div class="footer-content text-center">
-    <h2>let's stay in touch</h2>
-    <p>Get updates on sales specials and more</p>
-
-    <input type="text"> <br>
-
-    <button class="buy-now-btn3">Submit</button>
-</div>
-</div>
 
 
 <p class="copyright text-center">Copiright All Right rserved By Sabbir R Tahsan</p>
