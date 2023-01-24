@@ -44,17 +44,13 @@
 												href="${contextPath}/productDetail?bookNo=${product.bookNo}"
 												class="btn btn-default add-to-cart move"><i
 												class="fa fa-search"></i>상세보기</a>
-=======
 												class="fa fa-search"></i>ㅇㅁㅇㄴㅁㅇㅁㄴㅇㅁㄴㅇ</a>
->>>>>>> front_sup
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</c:forEach>
-
-
 				</div>
 				<!--features_items-->
 

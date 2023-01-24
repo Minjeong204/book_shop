@@ -1,9 +1,5 @@
 @charset "UTF-8";
 
-.space {
-  margin-bottom: 100px;
-}
-
 * {
   font-family: "Poppins", sans-serif;
 }
@@ -66,6 +62,7 @@
   padding: 12px 28px;
   border-radius: 8px;
   border: none;
+  margin-left: 305px;
 }
 
 .footer {
@@ -86,8 +83,7 @@
   border-radius: 8px;
   border: none;
   text-transform: uppercase;
-  margin-top: 10px;
-  margin-left: -220px;
+  margin-left: 305px;
 }
 
 .footer-content h2 {

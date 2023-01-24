@@ -7,17 +7,18 @@
 	}
 </script>
 <!-----------Footer------------>
-<div class="container footer">
+<div style="display:block; "class="container footer">
     <div class="footer-content text-center">
     <h2>let's stay in touch</h2>
-    <p>Get updates on sales specials and more</p>
+    <p style="top:3px;">Get updates on sales specials and more</p>
 
-    <input type="text"> <br>
+<div style="position:absolute;left:150px;" class="footer-content text-center">
 
-    <button class="buy-now-btn3">Submit</button>
+    <input type="text" placeholder="상품명 입력" style="z-index:5;width:200px;padding-left:10px;position:absolute;top:4.5px;height:35px;right:-575px">
+    
+    <button style="z-index:5;position:absolute;right:-700px;top:4.5px;right:-660px;"class="buy-now-btn3">Submit</button>
 </div>
 </div>
-
 
 <p class="copyright text-center">Copiright All Right rserved By Sabbir R Tahsan</p>
 <!-- <footer id="footer"> -->

@@ -222,7 +222,7 @@ function deleteReview(){
 					}
 				</script>
 				<div class="col-sm-12">
-					<ul class="nav nav-tabs">
+					<ul style="background-color:#ffa500" class="nav nav-tabs">
 						<li class="active"><a href="#details" onclick="detail();"
 							data-toggle="tab">Details</a></li>
 						<li><a href="#reviews" data-toggle="tab" onclick="review();">Review</a></li>
@@ -232,7 +232,7 @@ function deleteReview(){
 					<div class="tab-pane fade active in" id="details">
 						${product.description }</div>
 
-						<div class="tab-pane fade" id="reviews"
+						<div style="background-color:#ffa500" class="tab-pane fade" id="reviews"
 							style="margin: 0 auto; display: none;">
 							
 							
@@ -310,11 +310,7 @@ function deleteReview(){
 								</div>
 							</div>
 							<!-- 여기까지 댓글 주석  -->
-							
-							
-							
 						</div>
-
 					</div>
 				</div>
 				<!--/category-tab-->

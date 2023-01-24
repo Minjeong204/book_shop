@@ -57,7 +57,7 @@ a#scrollUp {
 	bottom: 0px;
 	right: 10px;
 	padding: 5px 10px;
-	background: #428bca;
+	background: #ff136f;
 	color: #FFF;
 	-webkit-animation: bounce 2s ease infinite;
 	animation: bounce 2s ease infinite;
@@ -351,9 +351,6 @@ translateY
 /*************************
 *******Footer CSS******
 **************************/
-#footer {
-	background: #F0F0E9;
-}
 
 .footer-top .container {
 	border-bottom: 1px solid #E0E0DA;
@@ -1232,7 +1229,7 @@ h2.title {
 }
 
 .product-information span span {
-	color: #428bca;
+	color: #ff136f;
 	float: left;
 	font-family: 'Roboto', sans-serif;
 	font-size: 30px;
@@ -1428,7 +1425,6 @@ h2.title {
 }
 
 .login-form form input, .signup-form form input {
-	background: #F0F0E9;
 	border: medium none;
 	color: #696763;
 	display: block;
@@ -2427,6 +2423,41 @@ h2.title {
 .contact-info .social-networks ul li a:hover {
 	color: #428bca;
 }
+.menu {
+  width: 800px;
+  overflow: hidden;
+  margin: 150px auto;
+}
+
+.menu > li {
+  width: 20%; /*20*5=100%*/
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  background-color: #5778ff;
+}
+
+.menu a {
+  color: #fff;
+}
+
+.submenu > li {
+  line-height: 50px;
+  background-color: #94a9ff;
+}
+
+.submenu {
+  height: 0; /*ul의 높이를 안보이게 처리*/
+  overflow: hidden;
+}
+.menu > li:hover {
+  background-color: #94a9ff;
+  transition-duration: 0.5s;
+}
+
+.menu > li:hover .submenu {
+  height: 250px; /*서브메뉴 li한개의 높이 50*5*/
+  transition-duration: 1s;
 /********************* Shopping Demo-8 **********************/
 .product-grid8{font-family:Poppins,sans-serif;position:relative;z-index:1}
 .product-grid8 .product-image8{border:1px solid #e4e9ef;position:relative;transition:all .3s ease 0s}

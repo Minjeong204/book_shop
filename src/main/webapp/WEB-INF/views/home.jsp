@@ -2,6 +2,7 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <c:set var="contextPath" value="${pageContext.request.contextPath}" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <%-- <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -9,49 +10,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-
-
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-8 padding-right" >
 				<div class="features_items" >
 					<!--features_items-->
-					<p>
-					<p>
-					<p>
-					<p>
-					<p>
-					<p>
+					<p><p><p><p><p><p>
 					<h2 class="title text-center">추천 상품</h2>
-<<<<<<< HEAD
-					<c:forEach var="product" items="${productList}">
-						<div class="col-sm-4">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo text-center">
-										<c:if test="${not empty product.imageFileName}">
-											<img
-												src="${contextPath}/download2.do?imageFileName=${product.imageFileName}&category=${product.category}"
-												id="image" style="height: 300px;" />
-										</c:if>
-										<h2>₩${product.price }원</h2>
-										<p>${product.bookName }<br>/${product.writer }
-										</p>
-										<a
-											href="${contextPath}/productDetail?bookNo=${product.bookNo}"
-											class="btn btn-default"><i class="fa fa-search"></i>상세 보기</a>
-									</div>
-									<div class="product-overlay">
-										<div class="overlay-content">
-											<h2>₩${product.price }원</h2>
-											<p>${product.bookName }<br>/${product.writer }
-											</p>
-											<a
-												href="${contextPath}/productDetail?bookNo=${product.bookNo}"
-												class="btn btn-default add-to-cart"><i
-												class="fa fa-search"></i>상세 보기</a>
-										</div>
-=======
 					<c:forEach var= "product" items="${productList}">
 						<div class="col-sm-4" >
 						<div class="col-md-4 col-sm-6" >
@@ -77,26 +42,18 @@
 									<p>${product.bookName }<br>/${product.writer }</p>
 										<a href="${contextPath}/productDetail?bookNo=${product.bookNo}" class="btn btn-default add-to-cart"><i
 											class="fa fa-search"></i>66666666</a>
->>>>>>> front_sup
 									</div>
 								</div>
 							</div>
 						</div>
+					</div>
 					</c:forEach>
-
+					
 				</div>
 				<!--features_items-->
 			</div>
 		</div>
-		<div class="row">
-			<form action="/geniebook/" id="searchForm" method="get">
-				<input type="search" name="keyword">
-				<button class="btn" type="search">Search</button>
-			</form>
-		</div>
 	</div>
-
-
 </body>
 </html> --%>
 <!DOCTYPE html>
@@ -115,11 +72,13 @@
 
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400&display=swap" rel="stylesheet">
+	
 
 </head>
 <body>
     
 <!--------------------Carousel-------------->
+
 <div class="container space">
     <div id="carouselExampleIndicators" class="carousel slide carousal-bg" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -133,29 +92,28 @@
                   <div class="col-xl-7">
                       <h1 class="display-4 fw-normal">Mi LED TV 4A PRO 32</h1>
                       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat repellat amet praesentium saepe voluptate obcaecati facere blanditiis accusantium nihil quaerat cum, rem eos sequi quas animi! Reprehenderit illum maxime tempore.</p>
-                         
+
                       <h3 class="price">1289$</h3>
 
-                      <button class="buy-now-btn">Buy Now</button>
+                      <button onclick="location.href='/geniebook2/productDetail?bookNo=3'" class="buy-now-btn1">Buy Now</button>
                   </div>
                   <div class="col-xl-5">
-                    <img src="https://i.ibb.co/V2fvvPD/tv.png" class="d-block w-100" alt="...">
-                   
+                    <img style="width:220px;height:320px;margin-left:100px;" src="./resources/images/BookImg/모비딕.jpg" alt="...">
                   </div>
               </div>
           </div>
           <div class="carousel-item">
             <div class="row align-items-center">
                 <div class="col-xl-7 fw-normal">
-                    <h1 class="display-4">JBL HEADPHON</h1>
+                    <h1 class="display-4">지구에서 한아뿐</h1>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat repellat amet praesentium saepe voluptate obcaecati facere blanditiis accusantium nihil quaerat cum, rem eos sequi quas animi! Reprehenderit illum maxime tempore.</p>
                        
                     <h3 class="price">245$</h3>
 
-                    <button class="buy-now-btn">Buy Now</button>
+                    <button onclick="location.href='/geniebook2/productDetail?bookNo=1'" class="buy-now-btn1">Buy Now</button>
                 </div>
                 <div class="col-xl-5">
-                    <img src="https://i.ibb.co/6YXnnZx/headphone.png" class="d-block w-100" alt="...">
+                    <img style="width:220px;height:320px;margin-left:100px;" src="./resources/images/BookImg/지구에서 한아뿐.jpg" alt="...">
                 </div>
                 </div>
           </div>
@@ -164,17 +122,15 @@
             <div class="col-xl-7">
                 <h1 class="display-4 fw-normal">X-BOX</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat repellat amet praesentium saepe voluptate obcaecati facere blanditiis accusantium nihil quaerat cum, rem eos sequi quas animi! Reprehenderit illum maxime tempore.</p>
-                   
+
                 <h3 class="price">389$</h3>
 
-                <button class="buy-now-btn">Buy Now</button>
+                <button onclick="location.href='/geniebook2/productDetail?bookNo=6'" class="buy-now-btn3">Buy Now</button>
             </div>
 
             <div class="col-xl-5">
-                <img src="https://i.ibb.co/0qsPhTR/xbox.png" class="d-block w-100" alt="...">
-
+                    <img style="width:220px;height:320px;margin-left:100px;" src="./resources/images/BookImg/폴리스.jpg" alt="...">
             </div>
-            
           </div>
 
         </div>
@@ -190,37 +146,7 @@
 </div>
 
 
-<!--------------------Catarogise----------------->
 
-
-<div class="container catagories space">
-    <h2 class="cata">Catagories</h2>
- <div class="row">
-     <div class="col-xl-4">
-       
-         <div class="cat1 d-flex justify-content-between align-items-center">
-            
-             <h1>Watche</h1>
-             <img src="https://i.ibb.co/Vp9ZfWr/watch.png" alt="watch" border="0">
-         </div>
-     </div>
-
-     <div class="col-xl-4">
-    
-         <div class="cat2 d-flex justify-content-between align-items-center">
-             <h1>Bag</h1>
-             <img src="https://i.ibb.co/JFsLgWw/bag.png" alt="bag" border="0">
-         </div>
-     </div>
-
-     <div class="col-xl-4">
-         <div class="cat3 d-flex justify-content-between align-items-center">
-             <h1>Shoes</h1>
-             <img src="https://i.ibb.co/mBtKTsd/shoes.png" alt="shoes" border="0">
-         </div>
-     </div>
- </div>
-</div>
 
 <!----------Shoping----------------->
 
@@ -266,20 +192,18 @@
 
 
 <!----------Shoping----------------->
-<h2>추천</h2>
+<div style="width:100%;height:1000px;">
 					<c:forEach var= "product" items="${productList}">
-					
-						<div class="container space">
-						<div class="row row-cols-1 row-cols-md-3 g-4 w-70 space">
-							<div class="col">
-								<div class="card h-100 w-70">
+							<div style="float:left;width:250px;height:500px;margin-left:100px;margin-right:70px;margin-top:50px;margin-bottom:50px; class="col-xl-4">
+								<div class="card shadow p-4" style="width: 25rem; border-radius: 10px; border: 1px solid transparent;">
 									<c:if test="${not empty product.imageFileName}">
-											<img src="${contextPath}/download2.do?imageFileName=${product.imageFileName}&category=${product.category}"
+											<img style="width:220px;height:330px;" src="${contextPath}/download2.do?imageFileName=${product.imageFileName}&category=${product.category}"
 												id="image"/>
 										</c:if>
-									<h2>₩${product.price }원</h2>
+									<h2 style="text-align: center;">₩${product.price}원</h2>
 									<p>${product.bookName }<br>/${product.writer }</p>
 									<a href="${contextPath}/productDetail?bookNo=${product.bookNo}" class="btn btn-default"><button class="buy-now-btn">Buy Now</button>
+								</div>
 								</div>
 								<div class="product-overlay">
 									<div class="overlay-content">
@@ -289,11 +213,9 @@
 											class="fa fa-search"></i>66666666</a>
 									</div>
 								</div>
-							</div>
-						</div>
-					</div>
 					</c:forEach>
-</div>
+							</div>
+							</div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
 

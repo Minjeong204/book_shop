@@ -179,7 +179,7 @@
 	</section><!--/slider--> --%>
 	    <!----------------Nav-- Bar------------>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light space ">
+    <nav style="--bs-bg-opacity: 0;"class="navbar navbar-expand-lg navbar-light bg-light space ">
         <div class="container">
           <a class="navbar-brand" href="#"><img src="https://i.ibb.co/qrwZZNB/logo.png" alt="logo" border="0"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -187,11 +187,68 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
-              <li class="nav-item"> <a class="nav-link" href="<c:url value="/login"/> ">Home</a>
-              <li class="nav-item"> <a class="nav-link" href="<c:url value="/login"/> ">로그인</a>
-<li class="nav-item"> <a class="nav-link" href="<c:url value="/registerForm_member"/> ">회원가입</a>
+              <li class="nav-item"><a class="nav-link" href="<c:url value="/"/> ">Home</a>
+              <li class="nav-item"><a class="nav-link" href="<c:url value="/login"/>">로그인</a>
+			  <li class="nav-item"> <a class="nav-link" href="<c:url value="/registerForm_member"/>">회원가입</a>
             </div>
           </div>
         </div>
       </nav>
+      <div id="container">
+    <nav style="background-color:#ffA500;">
+        <ul>
+            <li style="background-color:#ffA500;"><a href="<c:url value="/"/>">Home</a></li>
+            <li style="background-color:#ffA500;"><a href="#">소설</a>
+            <!-- First Tier Drop Down -->
+            <ul>
+                <li style="background-color:#ffA500;z-index:5;"><a href="<c:url value="/category/novel/1"/>">나라별 소설 </a></li>
+                <li style="background-color:#ffA500;z-index:5;"><a href="<c:url value="/category/novel/2"/>">고전/문학 </a></li>
+                <li style="background-color:#ffA500;z-index:5;"><a href="<c:url value="/category/novel/3"/>">장르소설 </a></li>
+            </ul>
+            </li>
+            <li style="background-color:#ffA500;"><a href="#">시/에세이</a>
+            <!-- First Tier Drop Down -->
+            <ul>
+                <li style="z-index:5;background-color:#ffA500;"><a href="<c:url value="/category/poem/1"/>">한국시 </a></li>
+                <li style="z-index:5;background-color:#ffA500;"><a href="<c:url value="/category/poem/2"/>">외국시 </a></li>
+                <li style="z-index:5;background-color:#ffA500;"><a href="<c:url value="/category/poem/3"/>">여행 에세이 </a></li>
+            	<!-- Second Tier Drop Down -->
+            </ul>
+            </li>
+            <li style="background-color:#ffA500;"><a href="#">자기개발</a>
+            <!-- First Tier Drop Down -->
+            <ul>
+                <li style="z-index:5;background-color:#ffA500;"><a href="<c:url value="/category/selfDevelopment/1"/>">대화/협상</a></li>
+                <li style="z-index:5;background-color:#ffA500;"><a href="<c:url value="/category/selfDevelopment/2"/>">자기능력계발 </a></li>
+            	<!-- Second Tier Drop Down -->
+            </ul>
+            </li>
+            <li style="background-color:#ffA500;"><a href="#">인문</a>
+            <!-- First Tier Drop Down -->
+            <ul>
+                <li style="z-index:5;background-color:#ffA500;"><a href="<c:url value="/category/liberal/1"/>">인문일반</a></li>
+                <li style="z-index:5;background-color:#ffA500;"><a href="<c:url value="/category/liberal/2"/>">심리</a></li>
+                <li style="z-index:5;background-color:#ffA500;"><a href="<c:url value="/category/liberal/3"/>">철학</a></li>
+            	<!-- Second Tier Drop Down -->
+            </ul>
+            </li>
+            <li style="background-color:#ffA500;"><a href="#">어린이</a>
+            <!-- First Tier Drop Down -->
+            <ul>
+                <li style="z-index:5;background-color:#ffA500;"><a href="<c:url value="/category/children/1"/>">어린이(공통)</a></li>
+                <li style="z-index:5;background-color:#ffA500;"><a href="<c:url value="/category/children/2"/>">초등</a></li>
+            	<!-- Second Tier Drop Down -->
+            </ul>
+            </li>
+            
+    <div style="top:-50px;right:750px;" class="footer-content text-center">
+
+    <input type="text" placeholder="상품명 입력"style="z-index:5;width:200px;padding-left:10px;position:absolute;top:4.5px;height:35px;right:-575px">
+    
+    <button style="z-index:5;position:absolute;right:-700px;top:4.5px;right:-660px;"class="buy-now-btn3">Submit</button>
+
+</div>
+        </ul>
+    </nav>
+</div>
 	
