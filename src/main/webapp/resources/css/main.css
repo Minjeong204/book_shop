@@ -1001,7 +1001,7 @@ h2.title {
 }
 
 .category-tab ul  li  a:hover {
-	background: #428bca;
+	background: #feeae8;
 	color: #fff;
 }
 
@@ -1011,7 +1011,7 @@ h2.title {
 	-moz-border-left-colors: none;
 	-moz-border-right-colors: none;
 	-moz-border-top-colors: none;
-	background-color: #428bca;
+	background-color: #ff136f;
 	border: 0px;
 	color: #FFFFFF;
 	cursor: default;
@@ -1099,8 +1099,8 @@ h2.title {
 .pagination  .active  a, .pagination  .active  span, .pagination  .active  a:hover,
 	.pagination  .active  span:hover, .pagination  .active  a:focus,
 	.pagination  .active  span:focus {
-	background-color: #428bca;
-	border-color: #428bca;
+	background-color: #ff136f;
+	border-color: #ff136f;
 	color: #FFFFFF;
 	cursor: default;
 	z-index: 2;
@@ -1120,7 +1120,7 @@ h2.title {
 }
 
 .pagination  li  a:hover {
-	background: #428bca;
+	background: #ff136f;
 	color: #fff;
 }
 
@@ -2302,7 +2302,13 @@ h2.title {
 }
 
 .btn.btn-primary {
-	background: #428bca;
+	background: #ff136f;
+	border: 0 none;
+	border-radius: 0;
+	margin-top: 16px;
+}
+.btn.btn-primary:hover {
+	background: #ff136f;
 	border: 0 none;
 	border-radius: 0;
 	margin-top: 16px;

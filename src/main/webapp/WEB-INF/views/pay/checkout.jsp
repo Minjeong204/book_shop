@@ -89,15 +89,11 @@
 	<div class="container">
 		<form action="<c:url value="/payment"/>" method="post">
 			<div class="breadcrumbs">
-				<ol class="breadcrumb">
-					<li><a href="#">Home</a></li>
-					<li class="active">Check out</li>
-				</ol>
 			</div>
 
 
 			<div class="container">
-				<h2>주문 정보</h2>
+				<h2 style="margin-top:30px;">주문 정보</h2>
 
 
 				<table
@@ -171,7 +167,7 @@
 					<tr>
 						<th>이메일</th>
 						<td><input type='text' id="email_id">@ <input
-							type='text' id="email_dns"> <select id="email_select"
+							type='text' id="email_dns"> <select style="margin-top:20px;" id="email_select"
 							onchange="selectEmail()">
 								<option value="">직접입력</option>
 								<option value="daum.net">daum.net</option>
@@ -302,12 +298,12 @@
 					<table class="table table-condensed">
 						<thead>
 							<tr class="cart_menu">
-								<td class="image">Item</td>
-								<td class="description"></td>
-								<td class="price">Price</td>
-								<td class="quantity">Quantity</td>
-								<td class="total">Total</td>
-								<td></td>
+								<td style="background-color:#ffa500" class="image">제품명</td>
+								<td style="background-color:#ffa500" class="description"></td>
+								<td style="background-color:#ffa500" class="price">가격</td>
+								<td style="background-color:#ffa500" class="quantity">갯수</td>
+								<td style="background-color:#ffa500" class="total">총 가격</td>
+								<td style="background-color:#ffa500"></td>
 							</tr>
 						</thead>
 						<tbody>
@@ -370,7 +366,7 @@
 				<tr align="center">
 					<td align="center"><input type="submit"
 						onclick="return checkPattern();" value="결제하기"
-						style="background: #428bca; border: medium none; border-radius: 0; color: #FFFFFF; font-family: 'Roboto', sans-serif; padding: 6px 25px;">
+						style="background: #ff136f; border: medium none; border-radius: 0; color: #FFFFFF; font-family: 'Roboto', sans-serif; padding: 6px 25px;">
 					</td>
 				</tr>
 			</table>

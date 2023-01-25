@@ -26,7 +26,8 @@
 <link href="<c:url value="/resources/css/responsive.css"/>"
 	rel="stylesheet">
 <link href="<c:url value="/resources/css/sr.css"/>" rel="stylesheet">
-<link href="<c:url value="/resources/css/dropdown.css"/>" rel="stylesheet">
+<link href="<c:url value="/resources/css/dropdown.css"/>"
+	rel="stylesheet">
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -52,6 +53,11 @@
 	href="<c:url value="/resources/images/ico/apple-touch-icon-72-precomposed.png"/>">
 <link rel="apple-touch-icon-precomposed"
 	href="<c:url value="/resources/images/ico/apple-touch-icon-57-precomposed.png"/>">
+<style type="text/css">
+.fade:not(.show) {
+	opacity: 1;
+}
+</style>
 </head>
 <!--/head-->
 <body>

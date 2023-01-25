@@ -31,12 +31,16 @@
 	float: left;
 	/* border: 0px solid #bcbcbc; */
 font-size
+
+
 :
+
  
+
 10px
+
+
 ;
-
-
 }
 * /
 
@@ -57,6 +61,10 @@ font-size
 
 body {
 	overflow-x: hidden;
+}
+
+.fade:not(.show) {
+	opacity: 1;
 }
 </style>
 <head>

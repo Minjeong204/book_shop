@@ -7,7 +7,7 @@
 <fmt:formatDate var="pubDate" value="${product.pubYear}"
 	pattern="yyyy-MM-dd" />
 <%
-	request.setCharacterEncoding("UTF-8");
+request.setCharacterEncoding("UTF-8");
 %>
 
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -165,6 +165,16 @@ function deleteReview(){
 			location.href=url;
 		}
 	}
+	function detail() {
+		console.log("detail");
+		var detail = document.getElementById("reviews");
+		detail.style.display = "none";
+		
+	}
+	function review() {
+		var review = document.getElementById("reviews");
+		review.style.display = "block";
+	}
 </script>
 
 <div class="container">
@@ -175,7 +185,8 @@ function deleteReview(){
 				<div class="col-sm-5">
 					<div class="view-product">
 						<c:if test="${not empty product.imageFileName}">
-							<img src="${contextPath}/download2.do?imageFileName=${product.imageFileName}"
+							<img
+								src="${contextPath}/download2.do?imageFileName=${product.imageFileName}"
 								id="image" style="width: 280px; height: auto;" />
 						</c:if>
 					</div>
@@ -185,16 +196,17 @@ function deleteReview(){
 					<div class="product-information">
 						<!--/product-information-->
 						<h2>${product.bookName}</h2>
-						
+
 						<p>${product.writer}</p>
 						<img
 							src="<c:url value="/resources/images/product-details/rating.png"/>"
 							alt="" /> <span> <span>${product.price}원</span> <label>수량:</label>
-							<input type="text" value="1" id="quantity"/>
-							<c:if test="${pageContext.request.userPrincipal.name != 'admin'}">
-							<button type="button" class="btn btn-fefault cart" onclick="go_to_cart()">
-								<i class="fa fa-shopping-cart"></i> 장바구니
-							</button>
+							<input type="text" value="1" id="quantity" /> <c:if
+								test="${pageContext.request.userPrincipal.name != 'admin'}">
+								<button type="button" class="btn btn-fefault cart"
+									onclick="go_to_cart()">
+									<i class="fa fa-shopping-cart"></i> 장바구니
+								</button>
 							</c:if>
 						</span>
 						<p>
@@ -211,110 +223,110 @@ function deleteReview(){
 			<!--/product-details-->
 			<div class="category-tab shop-details-tab">
 				<!--category-tab-->
-				<script type="text/javascript">
-					function detail() {
-						var detail = document.getElementById("reviews");
-						detail.style.display = "none";
-					}
-					function review() {
-						var review = document.getElementById("reviews");
-						review.style.display = "block";
-					}
-				</script>
+
 				<div class="col-sm-12">
-					<ul style="background-color:#ffa500" class="nav nav-tabs">
-						<li class="active"><a href="#details" onclick="detail();"
+					<ul style="background-color: #ffa500" class="nav nav-tabs">
+						<li class="active" onClick="detail()"><a href="#details"
 							data-toggle="tab">Details</a></li>
-						<li><a href="#reviews" data-toggle="tab" onclick="review();">Review</a></li>
+						<li><a href="#reviews" data-toggle="tab" onclick="review()">Review</a></li>
 					</ul>
 				</div>
 				<div class="tab-content">
-					<div class="tab-pane fade active in" id="details">
+					<div class="tab-pane active in" id="details">
 						${product.description }</div>
 
-						<div style="background-color:#ffa500" class="tab-pane fade" id="reviews"
-							style="margin: 0 auto; display: none;">
-							
-							
+					<div style="background-color: #ffa500" class="tab-pane fade"
+						id="reviews" style="margin: 0 auto; display: none;">
+
+
 						<!-- 여기부터 댓글주석 -->
 
 
-							<section class="content container-fluid">
-								<div class="col-lg-12">
-									<div class="box box-primary">
-										<div class="box-header with-border">
-											<h3 class="box-title">리뷰 작성</h3>
-										</div>
-										<div class="box-body">
-											<c:if test="${pageContext.request.userPrincipal.name != null }">
-												<div class="form-group">
-													<label for="memberId">댓글 작성자</label><br> <input type="hidden"
-														class="form-control" id="memberId" name="memberId"
-														style="border: 0;" value="${pageContext.request.userPrincipal.name}" disabled> 
-														<label >${pageContext.request.userPrincipal.name}님</label>
-												</div>
-												<div class="form-group">
-													<label for="content">댓글 내용</label> <input type="text"
-														class="form-control" id="reply" name="content"
-														placeholder="댓글 내용을 입력해주세요." style="width: 100%;">
-												</div>
-												<div class="form-group">
-													<a class="btn btn-primary" onclick="insertReview();">댓글 저장</a>
-												</div>
-											</c:if>
-											<c:if test="${pageContext.request.userPrincipal.name == null  }">
-												<label> <a href="${contextPath }/login">로그인</a> 하셔야 댓글을 작성할 수 있습니다. </label>
-											</c:if>
-										</div>
-										<div class="box-footer">
-											<section class="reviewList">
-												<script>
-													reviewList();
-												</script>
-											</section>
-										</div>
+						<section class="content container-fluid">
+							<div class="col-lg-12">
+								<div class="box box-primary">
+									<div class="box-header with-border">
+										<h3 class="box-title">리뷰 작성</h3>
 									</div>
-								</div>
-							</section>
-							
-							<div class="modal fade" id="updateReviewModal" role="dialog">
-								<div class="modal-dialog">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal">&times;</button>
-											<h4 class="modal-title">댓글 수정창</h4>
-										</div>
-										<div class="modal-body">
+									<div class="box-body">
+										<c:if
+											test="${pageContext.request.userPrincipal.name != null }">
 											<div class="form-group">
-													<label for="reviewId">댓글 번호</label> <input type="text"
-														class="form-control" id="update_reviewId" name="reviewId"
-														style="border: 0;" disabled>
-											</div>
-											<div class="form-group">
-													<label for="memberId">댓글 작성자</label> <input type="text"
-														class="form-control" id="update_memberId" name="memberId"
-														style="border: 0;" value="${pageContext.request.userPrincipal.name}" disabled>
+												<label for="memberId">댓글 작성자</label><br> <input
+													type="hidden" class="form-control" id="memberId"
+													name="memberId" style="border: 0;"
+													value="${pageContext.request.userPrincipal.name}" disabled>
+												<label>${pageContext.request.userPrincipal.name}님</label>
 											</div>
 											<div class="form-group">
 												<label for="content">댓글 내용</label> <input type="text"
-														class="form-control" id="update_review" name="content"
-														placeholder="댓글 내용을 입력해주세요." style="width: 100%;">
+													class="form-control" id="reply" name="content"
+													placeholder="댓글 내용을 입력해주세요." style="width: 100%;">
 											</div>
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-default pull-left" data-dismiss="modal">닫기</button>
-											<button type="button" class="btn btn-success" onclick="updateReview();">수정</button>
-											<button type="button" class="btn btn-danger" onclick="deleteReview();">삭제</button>
-										</div>
+											<div class="form-group">
+												<a class="btn btn-primary" onclick="insertReview();">댓글
+													저장</a>
+											</div>
+										</c:if>
+										<c:if test="${pageContext.request.userPrincipal.name == null}">
+											<label> <a style="color:#428bca" href="${contextPath }/login">로그인</a> 하셔야
+												댓글을 작성할 수 있습니다.
+											</label>
+										</c:if>
+									</div>
+									<div class="box-footer">
+										<section class="reviewList">
+											<script>
+													reviewList();
+												</script>
+										</section>
 									</div>
 								</div>
 							</div>
-							<!-- 여기까지 댓글 주석  -->
+						</section>
+
+						<div class="modal fade" id="updateReviewModal" role="dialog">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title">댓글 수정창</h4>
+									</div>
+									<div class="modal-body">
+										<div class="form-group">
+											<label for="reviewId">댓글 번호</label> <input type="text"
+												class="form-control" id="update_reviewId" name="reviewId"
+												style="border: 0;" disabled>
+										</div>
+										<div class="form-group">
+											<label for="memberId">댓글 작성자</label> <input type="text"
+												class="form-control" id="update_memberId" name="memberId"
+												style="border: 0;"
+												value="${pageContext.request.userPrincipal.name}" disabled>
+										</div>
+										<div class="form-group">
+											<label for="content">댓글 내용</label> <input type="text"
+												class="form-control" id="update_review" name="content"
+												placeholder="댓글 내용을 입력해주세요." style="width: 100%;">
+										</div>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default pull-left"
+											data-dismiss="modal">닫기</button>
+										<button type="button" class="btn btn-success"
+											onclick="updateReview();">수정</button>
+										<button type="button" class="btn btn-danger"
+											onclick="deleteReview();">삭제</button>
+									</div>
+								</div>
+							</div>
 						</div>
+						<!-- 여기까지 댓글 주석  -->
 					</div>
 				</div>
-				<!--/category-tab-->
 			</div>
+			<!--/category-tab-->
 		</div>
 	</div>
+</div>
 </div>

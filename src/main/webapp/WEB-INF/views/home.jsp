@@ -70,9 +70,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
 
-
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400&display=swap" rel="stylesheet">
-	
+
 
 </head>
 <body>
@@ -90,12 +89,12 @@
           <div class="carousel-item active">
               <div class="row align-items-center">
                   <div class="col-xl-7">
-                      <h1 class="display-4 fw-normal">Mi LED TV 4A PRO 32</h1>
-                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat repellat amet praesentium saepe voluptate obcaecati facere blanditiis accusantium nihil quaerat cum, rem eos sequi quas animi! Reprehenderit illum maxime tempore.</p>
+                      <h1 style="font-weight:bold;color:#000000;class="display-4 fw-normal">모비딕</h1>
+                      <p>끝없이 펼쳐지는 바다와 하늘, 거친 파도와 폭풍, 그리고 다시 잔잔한 바다와 하늘. 대양에서 펼쳐지는 에이해브와 모비 딕의 대결은 자연의 의지에, 우주의 힘에 대항하는 인간의 모습을 떠올리게 하는 이야기!</p>
 
-                      <h3 class="price">1289$</h3>
+                      <h3 class="price">22000₩</h3>
 
-                      <button onclick="location.href='/geniebook2/productDetail?bookNo=3'" class="buy-now-btn1">Buy Now</button>
+                      <button onclick="location.href='/geniebook/productDetail?bookNo=3'" class="buy-now-btn1">Buy Now</button>
                   </div>
                   <div class="col-xl-5">
                     <img style="width:220px;height:320px;margin-left:100px;" src="./resources/images/BookImg/모비딕.jpg" alt="...">
@@ -105,12 +104,12 @@
           <div class="carousel-item">
             <div class="row align-items-center">
                 <div class="col-xl-7 fw-normal">
-                    <h1 class="display-4">지구에서 한아뿐</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat repellat amet praesentium saepe voluptate obcaecati facere blanditiis accusantium nihil quaerat cum, rem eos sequi quas animi! Reprehenderit illum maxime tempore.</p>
+                    <h1 style="font-weight:bold;color:#000000;" class="display-4">지구에서 한아뿐</h1>
+                    <p>"우주가 아무리 넓어도 직접 하지 않으면 안 되는 이야기들이 있으니까!" 우주 가장자리에서 일어나 모두가 기억하게 된. 외계인 경민과 지구인 한아의 아주 희귀한 종류의 사랑 이야기!</p>
                        
-                    <h3 class="price">245$</h3>
+                    <h3 class="price">13000₩</h3>
 
-                    <button onclick="location.href='/geniebook2/productDetail?bookNo=1'" class="buy-now-btn1">Buy Now</button>
+                    <button onclick="location.href='/geniebook/productDetail?bookNo=1'" class="buy-now-btn1">Buy Now</button>
                 </div>
                 <div class="col-xl-5">
                     <img style="width:220px;height:320px;margin-left:100px;" src="./resources/images/BookImg/지구에서 한아뿐.jpg" alt="...">
@@ -120,12 +119,12 @@
           <div class="carousel-item">
               <div class="row align-items-center">
             <div class="col-xl-7">
-                <h1 class="display-4 fw-normal">X-BOX</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat repellat amet praesentium saepe voluptate obcaecati facere blanditiis accusantium nihil quaerat cum, rem eos sequi quas animi! Reprehenderit illum maxime tempore.</p>
+                <h1 style="font-weight:bold;color:#000000; class="display-4 fw-normal">폴리스</h1>
+                <p>삶과 죽음,정의와 불의,명예와 치욕...어느쪽을 선택해도 상실은 끝나지 않는다.</p>
 
-                <h3 class="price">389$</h3>
+                <h3 class="price">22000₩</h3>
 
-                <button onclick="location.href='/geniebook2/productDetail?bookNo=6'" class="buy-now-btn3">Buy Now</button>
+                <button onclick="location.href='/geniebook/productDetail?bookNo=6'" class="buy-now-btn3">Buy Now</button>
             </div>
 
             <div class="col-xl-5">
@@ -215,7 +214,7 @@
 								</div>
 					</c:forEach>
 							</div>
-							</div>
+						</div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
 

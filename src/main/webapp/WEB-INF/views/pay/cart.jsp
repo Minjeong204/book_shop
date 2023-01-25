@@ -98,22 +98,18 @@
 <section id="cart_items">
 	<div class="container">
 		<div class="breadcrumbs">
-			<ol class="breadcrumb">
-				<li><a href="#">Home</a></li>
-				<li class="active">Shopping Cart</li>
-			</ol>
 		</div>
-		<h2>${id }님의장바구니</h2>
+		<h2 style="margin-top:50px;">${id }님의 장바구니</h2>
 		<div class="table-responsive cart_info">
 			<table class="table table-condensed">
 				<thead>
 					<tr align="center" class="cart_menu">
-						<td colspan="2" class="image">Item</td>
+						<td style="background-color:#ffa500" colspan="2" class="image">제품명</td>
 						<!-- <td class="description"></td> -->
-						<td class="price">Price</td>
-						<td class="quantity">Quantity</td>
-						<td class="total">Total</td>
-						<td></td>
+						<td style="background-color:#ffa500" class="price">가격</td>
+						<td style="background-color:#ffa500" class="quantity">갯수</td>
+						<td style="background-color:#ffa500" class="total">총 가격</td>
+						<td style="background-color:#ffa500"></td>
 					</tr>
 				</thead>
 				<tbody onload="total">
@@ -141,7 +137,7 @@
 									<div class="cart_quantity_button">
 										<a class="btn btn-danger"
 											onclick="minus_cartItem(${status.index}, ${cartItemList[i].cartId}, ${product[i].bookNo});"
-											style="background-color: white; margin-bottom: 3px;"><i
+											style="border:0px solid;background-color: white; margin-bottom: 3px;"><i
 											class="fa fa-minus"></i></a> <input style="text-align: center"
 											class="cart_quantity_input" type="text"
 											id="quantity${status.index}" name="quantity"
@@ -149,7 +145,7 @@
 											readonly="readonly" size="2"> <a
 											class="btn btn-danger"
 											onclick="plus_cartItem(${status.index},${cartItemList[i].cartId}, ${product[i].bookNo} );"
-											style="background-color: white; margin-bottom: 3px;"><i
+											style="border:1px solid #ffffff;background-color: white; margin-bottom: 3px;"><i
 											class="fa fa-plus"></i></a>
 									</div>
 								</td>
@@ -161,7 +157,7 @@
 									</p>
 								</td>
 								<td class="cart_delete"><a class="btn btn-danger"
-									style="background-color: red; margin-bottom: 15px;" href=""
+									style="background-color: #ff136f; margin-bottom: 15px; href=""
 									onclick="delete_cartItem(${cartItemList[i].cartId}, ${product[i].bookNo} )"><i
 										class="fa fa-times"></i></a></td>
 							</tr>

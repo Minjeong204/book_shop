@@ -181,7 +181,7 @@
 
     <nav style="--bs-bg-opacity: 0;"class="navbar navbar-expand-lg navbar-light bg-light space ">
         <div class="container">
-          <a class="navbar-brand" href="#"><img src="https://i.ibb.co/qrwZZNB/logo.png" alt="logo" border="0"></a>
+          <a href="<c:url value="/"/> " class="navbar-brand"><img src="https://i.ibb.co/qrwZZNB/logo.png" alt="logo" border="0"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -198,6 +198,7 @@
     <nav style="background-color:#ffA500;">
         <ul>
             <li style="background-color:#ffA500;"><a href="<c:url value="/"/>">Home</a></li>
+            <li style="background-color:#ffA500;"><a href="/geniebook/productAll">모든제품</a>
             <li style="background-color:#ffA500;"><a href="#">소설</a>
             <!-- First Tier Drop Down -->
             <ul>
@@ -241,13 +242,20 @@
             </ul>
             </li>
             
-    <div style="top:-50px;right:750px;" class="footer-content text-center">
-
-    <input type="text" placeholder="상품명 입력"style="z-index:5;width:200px;padding-left:10px;position:absolute;top:4.5px;height:35px;right:-575px">
+    <div action="${contextPath}/productAll" id="searchForm" method="get" style="top:-50px;right:750px;" class="footer-content text-center">
+		<form action="/geniebook2/productAll" id="searchForm" method="get">
+    <input type="search" name="keyword" placeholder="상품명 입력"style="z-index:5;width:200px;padding-left:10px;position:absolute;top:4.5px;height:35px;right:-575px">
     
-    <button style="z-index:5;position:absolute;right:-700px;top:4.5px;right:-660px;"class="buy-now-btn3">Submit</button>
+    <button type="search" style="z-index:5;position:absolute;right:-700px;top:4.5px;right:-660px;"class="buy-now-btn3">Submit</button>
+    	</form>
+	</div>
+<!-- 		<div class="row">
+			<form action="/geniebook2/productAll" id="searchForm" method="get">
+				<input type="search" name="keyword">
+				<button class="btn" type="search">Search</button>
+			</form>
+		</div> -->
 
-</div>
         </ul>
     </nav>
 </div>
