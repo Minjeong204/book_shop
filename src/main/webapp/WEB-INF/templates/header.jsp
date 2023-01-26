@@ -198,7 +198,7 @@
     <nav style="background-color:#ffA500;">
         <ul>
             <li style="background-color:#ffA500;"><a href="<c:url value="/"/>">Home</a></li>
-            <li style="background-color:#ffA500;"><a href="/geniebook/productAll">모든제품</a>
+            <li style="background-color:#ffA500;"><a href="/geniebook2/productAll">모든제품</a>
             <li style="background-color:#ffA500;"><a href="#">소설</a>
             <!-- First Tier Drop Down -->
             <ul>
@@ -239,6 +239,19 @@
                 <li style="z-index:5;background-color:#ffA500;"><a href="<c:url value="/category/children/1"/>">어린이(공통)</a></li>
                 <li style="z-index:5;background-color:#ffA500;"><a href="<c:url value="/category/children/2"/>">초등</a></li>
             	<!-- Second Tier Drop Down -->
+            </ul>
+            <li style="background-color:#ffA500;"><a href="#">만화</a>
+            <ul>
+            	<li style="z-index:5;background-color:#ffA500;"><a href="<c:url value="/category/comic/1"/>">스포츠</a></li>
+                <li style="z-index:5;background-color:#ffA500;"><a href="<c:url value="/category/comic/2"/>">액션</a></li>
+                <li style="z-index:5;background-color:#ffA500;"><a href="<c:url value="/category/comic/3"/>">판타지</a></li>
+            </ul>
+            </li>
+            <li style="background-color:#ffA500;"><a href="#">여행</a>
+            <ul>
+            	<li style="z-index:5;background-color:#ffA500;"><a href="<c:url value="/category/travel/1"/>">국내여행</a></li>
+                <li style="z-index:5;background-color:#ffA500;"><a href="<c:url value="/category/travel/2"/>">해외여행</a></li>
+                <li style="z-index:5;background-color:#ffA500;"><a href="<c:url value="/category/travel/3"/>">테마여행</a></li>
             </ul>
             </li>
             
