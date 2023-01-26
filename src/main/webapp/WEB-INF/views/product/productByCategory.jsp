@@ -2,6 +2,7 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <c:set var="contextPath" value="${pageContext.request.contextPath}" />
+<%@ page import="kr.ac.spring.product.vo.Criteria"%>
 
 <section id="advertisement">
 	<div class="container">

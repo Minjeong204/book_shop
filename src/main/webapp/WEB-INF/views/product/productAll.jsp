@@ -87,7 +87,7 @@
 		</ul>
 	</div>
 
-	<form id="actionForm" action="/geniebook/productAll" method='get'>
+	<form id="actionForm" action="/geniebook2/productAll" method='get'>
 		<input type='hidden' name='pageNum' value="${pageMaker.cri.pageNum}">
 		<input type='hidden' name='amount' value="${pageMaker.cri.amount}">
 	</form>

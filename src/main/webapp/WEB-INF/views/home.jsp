@@ -94,7 +94,7 @@
 
                       <h3 class="price">22000₩</h3>
 
-                      <button onclick="location.href='/geniebook/productDetail?bookNo=3'" class="buy-now-btn1">Buy Now</button>
+                      <button onclick="location.href='/geniebook2/productDetail?bookNo=3'" class="buy-now-btn1">Buy Now</button>
                   </div>
                   <div class="col-xl-5">
                     <img style="width:220px;height:320px;margin-left:100px;" src="./resources/images/BookImg/모비딕.jpg" alt="...">
@@ -109,7 +109,7 @@
                        
                     <h3 class="price">13000₩</h3>
 
-                    <button onclick="location.href='/geniebook/productDetail?bookNo=1'" class="buy-now-btn1">Buy Now</button>
+                    <button onclick="location.href='/geniebook2/productDetail?bookNo=1'" class="buy-now-btn1">Buy Now</button>
                 </div>
                 <div class="col-xl-5">
                     <img style="width:220px;height:320px;margin-left:100px;" src="./resources/images/BookImg/지구에서 한아뿐.jpg" alt="...">
@@ -124,7 +124,7 @@
 
                 <h3 class="price">22000₩</h3>
 
-                <button onclick="location.href='/geniebook/productDetail?bookNo=6'" class="buy-now-btn3">Buy Now</button>
+                <button onclick="location.href='/geniebook2/productDetail?bookNo=6'" class="buy-now-btn3">Buy Now</button>
             </div>
 
             <div class="col-xl-5">
