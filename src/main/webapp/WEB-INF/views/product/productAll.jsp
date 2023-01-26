@@ -68,7 +68,7 @@
 				<!--features_items-->
 			</div>
 		</div> --%>
-	<div style="position:absolute;bottom:370px;left:650px;" class='pull-right'>
+	<div style="position:absolute;bottom:370px;left:540px;" class='pull-right'>
 		<ul class="pagination">
 			<c:if test="${pageMaker.prev}">
 				<li class="paginate_button previous"><a href="${pageMaker.startPage-1}" >Previous</a></li>
@@ -87,7 +87,7 @@
 		</ul>
 	</div>
 
-	<form id="actionForm" action="/geniebook2/productAll" method='get'>
+	<form id="actionForm" action="/geniebook/productAll" method='get'>
 		<input type='hidden' name='pageNum' value="${pageMaker.cri.pageNum}">
 		<input type='hidden' name='amount' value="${pageMaker.cri.amount}">
 	</form>

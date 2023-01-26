@@ -198,7 +198,7 @@
     <nav style="background-color:#ffA500;">
         <ul>
             <li style="background-color:#ffA500;"><a href="<c:url value="/"/>">Home</a></li>
-            <li style="background-color:#ffA500;"><a href="/geniebook2/productAll">모든제품</a>
+            <li style="background-color:#ffA500;"><a href="/geniebook/productAll">모든제품</a>
             <li style="background-color:#ffA500;"><a href="#">소설</a>
             <!-- First Tier Drop Down -->
             <ul>
@@ -256,7 +256,7 @@
             </li>
             
     <div action="${contextPath}/productAll" id="searchForm" method="get" style="top:-50px;right:750px;" class="footer-content text-center">
-		<form action="/geniebook2/productAll" id="searchForm" method="get">
+		<form action="/geniebook/productAll" id="searchForm" method="get">
     <input type="search" name="keyword" placeholder="상품명 입력"style="z-index:5;width:200px;padding-left:10px;position:absolute;top:4.5px;height:35px;right:-575px">
     
     <button type="search" style="z-index:5;position:absolute;right:-700px;top:4.5px;right:-660px;"class="buy-now-btn3">Submit</button>
