@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<c:set var="contextPath" value="${pageContext.request.contextPath}" />
 <script type="text/javascript">
 	function chk() {
 		window.open("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.3527186273013!2d127.0282712156468!3d37.49959833571589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca15796fe3091%3A0xaa658b05561b79ab!2z7ISc7Jq47Yq567OE7IucIOqwleuCqOq1rCDsl63sgrzrj5kg7YWM7Zek656A66GcN-q4uCA3!5e0!3m2!1sko!2skr!4v1566442206562!5m2!1sko!2skr", "", "width=500 height=500");
@@ -13,8 +14,8 @@
     <h2>let's stay in touch</h2>
     <p style="top:3px;">Get updates on sales specials and more</p>
 
-    <div action="/geniebook/productAll" id="searchForm" method="get" style="zoom:90%;top:-5px;right:1240px;" class="footer-content text-center">
-		<form action="/geniebook/productAll" id="searchForm" method="get">
+    <div action="${contextPath}/productAll" id="searchForm" method="get" style="zoom:90%;top:-5px;right:1240px;" class="footer-content text-center">
+		<form action="${contextPath}/productAll" method="get">
     <input type="search" name="keyword" placeholder="상품명 입력"style="z-index:5;width:200px;padding-left:10px;position:absolute;top:4.5px;height:35px;right:-575px">
     
     <button type="search" style="z-index:5;position:absolute;right:-700px;top:4.5px;right:-660px;"class="buy-now-btn3">Submit</button>

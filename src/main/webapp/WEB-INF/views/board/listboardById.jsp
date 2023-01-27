@@ -77,7 +77,7 @@
 				<table class="table" border="0"
 					style="margin-left: auto; margin-right: auto;">
 					<tr
-						style="background: #428bca; border: medium none; border-radius: 0; color: #FFFFFF; font-family: 'Roboto', sans-serif; padding: 20px 25px;">
+						style="background: #ffa500; border: medium none; border-radius: 0; color: #FFFFFF; font-family: 'Roboto', sans-serif; padding: 20px 25px;">
 						
 						<th width="15%">작성자</th>
 						<th>제목</th>

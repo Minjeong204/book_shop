@@ -273,10 +273,12 @@ public class AdminController {
 		productVO = productService.bookDetail(bookNo);
 
 		HashMap<String, String> categories = new HashMap<String, String>();
-		String[][] categories_String = { { "novel1", "�굹�씪蹂꾩냼�꽕" }, { "novel2", "怨좎쟾/臾명븰" }, { "novel3", "�옣瑜댁냼�꽕" },
-				{ "poem1", "�븳援��떆" }, { "poem2", "�쇅援��떆" }, { "poem3", "�뿬�뻾 �뿉�꽭�씠" },
-				{ "selfDevelopment1", "���솕/�삊�긽" }, { "selfDevelopment2", "�옄湲곕뒫�젰怨꾨컻" }, { "liberal1", "�씤臾몄씪諛�" },
-				{ "liberal2", "�떖由�" }, { "liberal3", "泥좏븰" }, { "child1", "�뼱由곗씠(怨듯넻)" }, { "child2", "珥덈벑" }, };
+		String[][] categories_String = { { "novel1", "나라별소설" }, { "novel2", "고전문학" }, { "novel3", "장르소설" },
+				{ "poem1", "한국시" }, { "poem2", "외국시" }, { "poem3", "여행 에세이" },
+				{ "selfDevelopment1", "대화/협상" }, { "selfDevelopment2", "자기능력계발" }, { "liberal1", "인문일반" },
+				{ "liberal2", "심리" }, { "liberal3", "철학" }, { "child1", "어린이(공통)" }, { "child2", "초등" },
+				{ "travel1", "국내여행" }, { "travel2", "해외여행" }, { "travel3", "테마여행" }, { "comic1", "스포츠" }, 
+				{ "comic2", "액션" }, { "comic3", "판타지" },};
 
 		for (String[] c : categories_String) {
 			categories.put(c[0], c[1]);

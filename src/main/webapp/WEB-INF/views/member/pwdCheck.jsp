@@ -21,7 +21,7 @@
 </script>
 </head>
 <body>
-	<div class="container">
+	<div style="margin-top:50px;margin-bottom:50px;" class="container">
 		<div style="align:center;">
 			<div class="col-sm-4 col-sm-offset-1">
 
@@ -37,11 +37,10 @@
 
 
 
-				<button type="button" class="btn btn-default" onclick="pwdCheck()">확인</button>
+				<button type="button" style="color:#ffffff;background-color:#ff136f" class="btn btn-default" onclick="pwdCheck()">확인</button>
 
-				<button type="button" class="btn btn-default"
+				<button type="button" style="color:#ffffff;background-color:#ff136f" class="btn btn-default"
 					onclick="history.go(-1)">취소</button>
-
 			</div>
 		</div>
 

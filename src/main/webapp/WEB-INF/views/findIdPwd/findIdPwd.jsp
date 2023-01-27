@@ -12,9 +12,9 @@
 <body>
 	<div style="text-align:center;">
 	<br>
-	<button type="button" onclick="location.href='findId'" class="btn btn-dark">아이디 찾기</button>
+	<button style="background-color:#ff136f;border-color:#ffffff;" type="button" onclick="location.href='findId'" class="btn btn-dark">아이디 찾기</button>
 	<br><br><br>
-	<button type="button" onclick="location.href='findPwd'" class="btn btn-dark">비밀번호 찾기</button>
+	<button style="background-color:#ff136f;border-color:#ffffff;" onclick="location.href='findPwd'" class="btn btn-dark">비밀번호 찾기</button>
 	</div>
 </body>
 </html>

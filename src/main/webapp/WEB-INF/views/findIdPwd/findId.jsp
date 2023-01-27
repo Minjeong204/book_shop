@@ -33,10 +33,10 @@
 				<tr>
 					<th></th>
 					<td><input type="submit" value="확인"
-						style="background: #428bca; border: medium none; border-radius: 0; color: #FFFFFF; font-family: 'Roboto', sans-serif; padding: 6px 25px;">
+						style="background: #ff136f; border: medium none; border-radius: 8px; color: #FFFFFF; font-family: 'Roboto', sans-serif; padding: 6px 25px;">
 
 						<input type="reset" class="btn btn-default" value="다시입력"
-						style="background: #428bca; border: medium none; border-radius: 0; color: #FFFFFF; font-family: 'Roboto', sans-serif; padding: 6px 25px;" />
+						style="background: #ff136f; border: medium none; border-radius: 8px; color: #FFFFFF; font-family: 'Roboto', sans-serif; padding: 6px 25px;" />
 					</td>
 				</tr>
 			</table>

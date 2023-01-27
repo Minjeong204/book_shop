@@ -191,32 +191,31 @@
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-		<ul class="nav navbar-nav">
-		
+		<ul class="nav navbar-nav" style="margin-left:920px;">
 			<c:if test="${pageContext.request.userPrincipal.name != null}">
 				<c:if test="${pageContext.request.userPrincipal.name == 'admin'}">
-					<li><a class="nav-link"
+					<li style="background-color:#f8f9fa"><a class="nav-link"
 						href="<c:url value="/memberInfo_ui"/> "><i class="fa fa-user"></i>관리자정보</a></li>
 				</c:if>
 
 				<c:if test="${pageContext.request.userPrincipal.name != 'admin'}">
-					<li><a class="nav-link"
+					<li style="background-color:#f8f9fa;border-radius: 8px;"><a class="nav-link"
 						href="<c:url value="/memberInfo_ui"/> "><i class="fa fa-user"></i>회원정보</a></li>
 				</c:if>
 			</c:if>
 
 			<c:if test="${pageContext.request.userPrincipal.name != null}">
 				<c:if test="${pageContext.request.userPrincipal.name == 'admin'}">
-					<li class="nav-item"><a class="nav-link"
+					<li style="background-color:#f8f9fa" class="nav-item"><a class="nav-link"
 						href="<c:url value="/admin/adminManager"/> ">관리자기능</a></li>
 				</c:if>
 
 				<c:if test="${pageContext.request.userPrincipal.name != 'admin'}">
-					<li class="nav-item"><a class="nav-link"
+					<li style="background-color:#f8f9fa" class="nav-item"><a class="nav-link"
 						href="<c:url value="/cart"/> ">장바구니</a></li>
 				</c:if>
 
-				<li class="nav-item"><a class="nav-link"
+				<li style="background-color:#f8f9fa" class="nav-item"><a class="nav-link"
 					href="javascript:document.getElementById('logout').submit()">로그아웃</a>
 				</li>
 				<form id="logout" action="<c:url value="/logout" />" method="post">
@@ -225,12 +224,12 @@
 				</form>
 			</c:if>
 			<c:if test="${pageContext.request.userPrincipal.name == null}">
-				<li class="nav-item"><a class="nav-link"
+				<li style="background-color:#f8f9fa" class="nav-item"><a class="nav-link"
 					href="<c:url value="/login"/> ">로그인</a></li>
-				<li class="nav-item"><a class="nav-link"
+				<li style="background-color:#f8f9fa" class="nav-item"><a class="nav-link"
 					href="<c:url value="/registerForm_member"/> ">회원가입</a></li>
 			</c:if>
-			</ul>
+		</ul>
 		</div>
 	</div>
 </nav>
@@ -240,7 +239,7 @@
 			<li style="background-color: #ffA500;"><a
 				href="<c:url value="/"/>">Home</a></li>
 			<li style="background-color: #ffA500;"><a
-				href="/geniebook/productAll">모든제품</a>
+				href="${contextPath}/productAll">모든제품</a>
 			<li style="background-color: #ffA500;"><a href="#">소설</a> <!-- First Tier Drop Down -->
 				<ul>
 					<li style="background-color: #ffA500; z-index: 5;"><a

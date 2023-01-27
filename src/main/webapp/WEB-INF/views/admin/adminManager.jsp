@@ -56,18 +56,18 @@ button {
 </head>
 <body onload="on_refresh(${deleteStatus},${insertStatus})">
  <!--category-tab-->
-   <script type="text/javascript">
+    <script type="text/javascript">
                function member() {
-                  var member = document.getElementById("member");
-                  var product = document.getElementById("product");
-                  member.style.display = "block";
-                  product.style.display = "none";
-               }
-               function product() {
                   var member = document.getElementById("member");
                   var product = document.getElementById("product");
                   member.style.display = "none";
                   product.style.display = "block";
+               }
+               function product() {
+                  var member = document.getElementById("member");
+                  var product = document.getElementById("product");
+                  member.style.display = "block";
+                  product.style.display = "none";
                }
       </script>
 
@@ -87,21 +87,21 @@ button {
                   <!--member-details-->
                <div class="view-member">
                   회원 ID <input type="text" id="member_search">
-                  <button type="button" onClick="member_search()">검색</button>
+                  <button style="background-color:#ff136f" type="button" onClick="member_search()">검색</button>
 
-                  <button type="button" onClick="sendMail_All()">모든 회원 메일 전송</button>
+                  <button style="background-color:#ff136f" type="button" onClick="sendMail_All()">모든 회원 메일 전송</button>
 
                   <table class="table" border="0"
                      style="margin-left: auto; margin-right: auto;">
 
                      <tr
-                        style="background: #428bca; border: medium none; border-radius: 0; color: #FFFFFF; font-family: 'Roboto', sans-serif; padding: 6px 25px;">
-                        <th>ID</th>
-                        <th>이름</th>
-                        <th>총 누적 금액</th>
-                        <th>핸드폰 번호</th>
-                        <th>메일 수신 여부</th>
-                        <th></th>
+                        style="border: medium none; border-radius: 0; color: #FFFFFF; font-family: 'Roboto', sans-serif; padding: 6px 25px;">
+                        <th style="background-color:#ff136f;">ID</th>
+                        <th style="background-color:#ff136f;">이름</th>
+                        <th style="background-color:#ff136f;">총 누적 금액</th>
+                        <th style="background-color:#ff136f;">핸드폰 번호</th>
+                        <th style="background-color:#ff136f;">메일 수신 여부</th>
+                        <th style="background-color:#ff136f;"></th>
                      </tr>
                      <c:forEach var="memberVO" items="${memberList}">
                         <tr >
@@ -110,7 +110,7 @@ button {
                            <td>${memberVO.acc_Price}원</td>
                            <td>${memberVO.phoneNum}</td>
                            <td>${memberVO.receive_email}</td>
-                           <td><button type="button" id=memberDetail onclick="location.href='memberDetail?id=${memberVO.id}'" class="button">
+                           <td><button style="background-color:#ff136f;" type="button" id=memberDetail onclick="location.href='memberDetail?id=${memberVO.id}'" class="button">
                            		상세보기</button></td>
                         </tr>
                      </c:forEach>
@@ -128,14 +128,14 @@ button {
 
                      <tr
                         style="background: #428bca; border: medium none; border-radius: 0; color: #FFFFFF; font-family: 'Roboto', sans-serif; padding: 6px 25px;">
-                        <th>ID</th>
-                        <th>카테고리</th>
-                        <th>책 이름</th>
-                        <th>작가</th>
-                        <th>출판사</th>
-                        <th>가격</th>
-                        <th>재고</th>
-                        <th colspan="2"><button type="button"
+                        <th style="background-color:#ff136f">ID</th>
+                        <th style="background-color:#ff136f">카테고리</th>
+                        <th style="background-color:#ff136f">책 이름</th>
+                        <th style="background-color:#ff136f">작가</th>
+                        <th style="background-color:#ff136f">출판사</th>
+                        <th style="background-color:#ff136f">가격</th>
+                        <th style="background-color:#ff136f">재고</th>
+                        <th style="background-color:#ff136f" colspan="2"><button style="background-color:#ffffff;color:#ff136f;" type="button"
                               style="float=right; background: white; border: medium none; border-radius: 0; color: #428bca; font-family: 'Roboto', sans-serif; padding: 4px 15px; border-radius: 10px;"
                               id="addProduct" onclick="location.href='addProductForm'" >
                               <b>상품 추가</b>
@@ -150,9 +150,9 @@ button {
                            <td>${productVO.publisher}</td>
                            <td>${productVO.price}</td>
                            <td>${productVO.stock}</td>
-                           <td><button type="button" id=productDetail
+                           <td><button style="background-color:#ff136f" type="button" id=productDetail
                                  onclick="location.href='productDetail?bookNo=${productVO.bookNo}'">더보기</button></td>
-                           <td><button type="button" id=deleteProduct
+                           <td><button style="background-color:#ff136f"type="button" id=deleteProduct
                                  onclick="deleteConfirm(${productVO.bookNo})">삭제</button></td>
                         </tr>
                      </c:forEach>

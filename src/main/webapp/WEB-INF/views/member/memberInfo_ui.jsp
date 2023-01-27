@@ -26,21 +26,28 @@
 		font-weight: bold;
 		font-size: 20px;
 	}
+	a{
+		text-decoration:none;
+		color:black;	
+	}
+	a:hover{
+		color:black;
+	}
 	
-	a:link,a:visited,a:active,a:hover{
+/* 	a:link,a:visited,a:active,a:hover{
 		text-decoration: none;
 		color:#646464;
-	}
+	} */
 </style>
 </head>
 <body>
-	<div class="container" align="center">
+	<div style=margin-top:50px; class="container" align="center">
 
 		<h2>${memberVO.id }님의 정보</h2>
 		<c:if test="${pageContext.request.userPrincipal.name == 'admin'}">
 		</c:if>
 		<c:if test="${pageContext.request.userPrincipal.name != 'admin'}">
-			<a href="${contextPath}/pwdCheck_delete">회원탈퇴</a>
+			<a style="font-size:14px;" href="${contextPath}/pwdCheck_delete">회원탈퇴</a>
 		</c:if>
 		<tr>
 			<th><br></th>

@@ -61,8 +61,14 @@ th {
                      <input type="file" name="uploadFile" onchange="readURL(this);" /> 
                   </td>
                <tr>
-               <tr>
+<!--                <tr>
                   <th>카테고리</th>
+                  
+               </tr> -->
+               <tr>
+                  <th><p>카테고리</th>
+                  <td colspan="2"><p>
+                        <input type="text" name="category" id="category" style="width:350px"></td>
                </tr>
                <tr>
                   <th><p>책 이름</th>
@@ -107,7 +113,6 @@ th {
                            type="submit" value="상품 추가" class="button" />
                      <p>
                      <p></td>
-
                </tr>
             </table>
 

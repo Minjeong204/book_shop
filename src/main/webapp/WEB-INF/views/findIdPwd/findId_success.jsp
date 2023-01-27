@@ -13,6 +13,6 @@
 </head>
 <body>
 	<label>당신의 ID는  ${memberVO.id } 입니다.</label><br><br>
-	<a href="<c:url value="/findPwd"/>">비밀번호 찾기</a>
+	<button style="background-color:#ff136f;border-radius:8px;border-color:#ffffff;color:#ffffff;" type="button" onclick="location.href='findPwd'" class="btn btn-dark">비밀번호찾기</button>
 </body>
 </html>

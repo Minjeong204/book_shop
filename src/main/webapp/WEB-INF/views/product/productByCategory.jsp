@@ -50,7 +50,7 @@
 			</div>
 		</div>
 	</div> --%>
-<div style="width:100%;height:1000px;">
+<div style="width:100%;height:1300px;">
 					<c:forEach var= "product" items="${productList}">
 							<div style="float:left;width:250px;height:500px;margin-left:100px;margin-right:70px;margin-top:50px;margin-bottom:50px; class="col-xl-4">
 								<div class="card shadow p-4" style="width: 25rem; border-radius: 10px; border: 1px solid transparent;">
