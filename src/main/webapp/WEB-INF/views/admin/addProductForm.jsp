@@ -9,7 +9,7 @@
 <style type="text/css">
 button, .button {
    border-radius: 10px;
-   background: #428bca;
+   background: #ff136f;
    border: medium none;
    color: #FFFFFF;
    font-family: 'Roboto', sans-serif;
@@ -51,7 +51,7 @@ th {
             action="${contextPath}/admin/addProduct?${_csrf.parameterName}=${_csrf.token}"
             enctype="multipart/form-data" method="post">
             <table width="80%" style="padding: 10px 0 10px 0; font-size:17px;">
-               <tr height="2" bgcolor="#428bca">
+               <tr height="2" bgcolor="#ff136f">
                   <td colspan="3"></td>
                </tr>
                <tr>

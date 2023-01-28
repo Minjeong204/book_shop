@@ -69,7 +69,7 @@
 <title>Q&A list</title>
 </head>
 <body>
-	<h2 style="text-align: center">Q&A</h2>
+	<h2 style="text-align: center;">Q&A</h2>
 	<div class="container">
 		<div class="product-details">
 			<!--product-details-->
@@ -88,7 +88,7 @@
 						<tr>
 						
 							<td>${row.memberId}</td>
-							<td><a
+							<td><a style="color:#ff136f;"
 								href="${contextPath }/board/viewBoard?boardId=${row.boardId}">${row.title}</a></td>
 							<td><fmt:formatDate value="${row.boardDate}"
 									pattern="yyyy-MM-dd" /></td>
@@ -100,7 +100,7 @@
 				
 				<c:if test="${id ne 'anonymousUser' }">
 					<input type=button value="글쓰기" onClick="boardForm()"
-						style="background: #428bca; border: medium none; border-radius: 0; color: #FFFFFF; font-family: 'Roboto', sans-serif; padding: 6px 30px;" />
+						style="background: #ff136f; border: medium none; border-radius: 0; color: #FFFFFF; font-family: 'Roboto', sans-serif; padding: 6px 30px;" />
 				</c:if>
 				<!-- pagination{s} -->
 
@@ -120,9 +120,9 @@
 						<c:forEach begin="${pagination.startPage}"
 							end="${pagination.endPage}" var="idx">
 <%-- ${pagination.page == idx ? 'active' : ''} --%>
-							<li
+							<li 
 								class="page-item <c:out value="${pagination.page == idx ? 'active' : ''}"/> "><a
-								class="page-link" href="#"
+								class="page-link" style="background-color:#ff136f;" href="#" 
 								onClick="fn_pagination('${idx}', '${pagination.range}', '${pagination.rangeSize}')">
 									${idx} </a></li>
 
@@ -132,7 +132,7 @@
 
 						<c:if test="${pagination.next}">
 
-							<li class="page-item"><a class="page-link" href="#"
+							<li class="page-item"><a style="background-color:#feeae8;" class="page-link" href="#"
 								onClick="fn_next('${pagination.page}', '${pagination.range}', '${pagination.rangeSize}')">Next</a></li>
 
 						</c:if>

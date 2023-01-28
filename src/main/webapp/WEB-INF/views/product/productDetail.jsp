@@ -269,7 +269,7 @@ function deleteReview(){
 											</div>
 										</c:if>
 										<c:if test="${pageContext.request.userPrincipal.name == null}">
-											<label> <a style="color:#428bca" href="${contextPath }/login">로그인</a> 하셔야
+											<label> <a style="color:#ff136f" href="${contextPath }/login">로그인</a> 하셔야
 												댓글을 작성할 수 있습니다.
 											</label>
 										</c:if>

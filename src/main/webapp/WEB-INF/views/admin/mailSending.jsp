@@ -31,7 +31,7 @@
         <p>
       <div align="center">
       	<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
-        <input type="submit" value="메일 보내기" class="btn btn-warning" style="background-color:#428bca; border-color:#428bca;">
+        <input type="submit" value="메일 보내기" class="btn btn-warning" style="background-color:#ff136f; border-color:#ff136f;">
       </div>
     </form>
     </div>

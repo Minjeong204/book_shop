@@ -12,7 +12,7 @@
 <style type="text/css">
 button {
 	border-radius: 10px;
-	background: #428bca;
+	background: #ff136f;
 	border: medium none;
 	color: #FFFFFF;
 	font-family: 'Roboto', sans-serif;

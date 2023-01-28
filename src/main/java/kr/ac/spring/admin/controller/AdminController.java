@@ -278,7 +278,7 @@ public class AdminController {
 				{ "selfDevelopment1", "대화/협상" }, { "selfDevelopment2", "자기능력계발" }, { "liberal1", "인문일반" },
 				{ "liberal2", "심리" }, { "liberal3", "철학" }, { "child1", "어린이(공통)" }, { "child2", "초등" },
 				{ "travel1", "국내여행" }, { "travel2", "해외여행" }, { "travel3", "테마여행" }, { "comic1", "스포츠" }, 
-				{ "comic2", "액션" }, { "comic3", "판타지" },};
+				{ "comic2", "액션" }, { "comic3", "판타지" }, };
 
 		for (String[] c : categories_String) {
 			categories.put(c[0], c[1]);

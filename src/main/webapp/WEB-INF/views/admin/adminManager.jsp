@@ -12,7 +12,7 @@ table {
 
 button {
 	border-radius: 10px;
-	background: #428bca;
+	background: #ff136f;
 	border: medium none;
 	border-radius: 4;
 	color: #FFFFFF;
@@ -76,7 +76,7 @@ button {
          <ul class="nav nav-tabs">
             <li class="active"><a href="#member" data-toggle="tab"
                onclick="member();">회원관리</a></li>
-            <li><a href="#product" data-toggle="tab" onclick="product();">상품관리</a></li>
+            <li style="background-color:#feeae8"><a style="color:#000000;" href="#product" data-toggle="tab" onclick="product();">상품관리</a></li>
          </ul>
       </div>
       <div class="tab_content">
@@ -127,7 +127,7 @@ button {
                      style="margin-left: auto; margin-right: auto;">
 
                      <tr
-                        style="background: #428bca; border: medium none; border-radius: 0; color: #FFFFFF; font-family: 'Roboto', sans-serif; padding: 6px 25px;">
+                        style="background: #ff136f; border: medium none; border-radius: 0; color: #FFFFFF; font-family: 'Roboto', sans-serif; padding: 6px 25px;">
                         <th style="background-color:#ff136f">ID</th>
                         <th style="background-color:#ff136f">카테고리</th>
                         <th style="background-color:#ff136f">책 이름</th>
@@ -136,7 +136,7 @@ button {
                         <th style="background-color:#ff136f">가격</th>
                         <th style="background-color:#ff136f">재고</th>
                         <th style="background-color:#ff136f" colspan="2"><button style="background-color:#ffffff;color:#ff136f;" type="button"
-                              style="float=right; background: white; border: medium none; border-radius: 0; color: #428bca; font-family: 'Roboto', sans-serif; padding: 4px 15px; border-radius: 10px;"
+                              style="float=right; background: white; border: medium none; border-radius: 0; color: #ff136f; font-family: 'Roboto', sans-serif; padding: 4px 15px; border-radius: 10px;"
                               id="addProduct" onclick="location.href='addProductForm'" >
                               <b>상품 추가</b>
                            </button></th>

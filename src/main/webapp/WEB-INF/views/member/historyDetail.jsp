@@ -25,7 +25,7 @@
 
 				<table
 					style="width: 100%; padding: 5px 0 5px 0; float: none; margin: 0 auto;">
-					<tr height="2" bgcolor="#428bca">
+					<tr height="2" bgcolor="#ff136f">
 						<td colspan="2"></td>
 					</tr>
 					<tr>

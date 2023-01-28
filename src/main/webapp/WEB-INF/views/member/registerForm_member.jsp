@@ -199,7 +199,7 @@
 
 		<form action="<c:url value="/registerMember"/>" method="post">
 			<table width="940" style="padding: 5px 0 5px 0; margin: 50px auto;background-color:#ffa500;border-radius:8px;">
-				<tr height="2" bgcolor="#428bca">
+				<tr height="2" bgcolor="#ff136f">
 					<td colspan="2"></td>
 				</tr>
 				<script>
@@ -365,7 +365,7 @@
 							<option value="nate.com">nate.com</option>
 					</select> <input type="hidden" name="email" id="email"> <br> <br></td>
 				</tr>
-				<tr height="2" bgcolor="#428bca">
+				<tr height="2" bgcolor="#ff136f">
 					<td colspan="2">
 				</tr>
 				<tr>
@@ -400,7 +400,7 @@
 							<input class="form-control" placeholder="상세주소" name="addr_detail"
 								id="addr_detail" type="text" value="${addrVO.addr_detail }" />
 						</div></td>
-				<tr height="2" bgcolor="#428bca">
+				<tr height="2" bgcolor="#ff136f">
 					<td colspan="2"></td>
 				</tr>
 				<script>
@@ -484,7 +484,7 @@
 				</tr>
 
 
-				<tr height="2" bgcolor="#428bca">
+				<tr height="2" bgcolor="#ff136f">
 					<td colspan="2"></td>
 
 				</tr>

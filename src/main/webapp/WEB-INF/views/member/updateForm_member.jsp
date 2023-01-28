@@ -121,16 +121,17 @@
 
 	${message}
 	<div class="container">
-		<center><h2>회원 정보 수정</h2></center>
 
 		<form action="<c:url value="/updateMember"/>" method="post">
-			<table width="940" style="padding: 5px 0 5px 0; margin: 0 auto;">
-				<tr height="2" bgcolor="#428bca">
+			<table width="940" style="padding: 5px 0 5px 0; margin: 50px auto;background-color:#ffa500;border-radius:8px;">
+				<tr height="2" bgcolor="#ffa500">
 					<td colspan="2"></td>
 				</tr>
-
 				<tr>
-					<th>이름</th>
+					<th style="padding-bottom:30px;font-weight:bold;color: #ffffff;padding-top: 10px;position:relative;left:40%;"><center><h2>회원 정보 수정</h2></center></th>
+				</tr>
+				<tr>
+					<th style="text-indent:20px;">이름</th>
 					<td><input type="text" name="name" id="name"
 						value="${memberVO.name }" readonly="readonly"></td>
 				</tr>
@@ -142,7 +143,7 @@
 					<th><br></th>
 				</tr>
 				<tr>
-					<th>아이디</th>
+					<th style="text-indent:20px;">아이디</th>
 					<td><input type="text" name="id" id="id" size="20"
 						value="${memberVO.id }" readonly="readonly" /> <input
 						type="hidden" name="username" id="username"
@@ -152,12 +153,12 @@
 					<th><br></th>
 				</tr>
 				<tr>
-					<th>비밀번호</th>
+					<th style="text-indent:20px;">비밀번호</th>
 					<td><input type="password" id=password name="password">
 						영문/숫자/특수문자 포함 8자 이상</td>
 				</tr>
 				<tr>
-					<th>비밀번호 확인</th>
+					<th style="text-indent:20px;">비밀번호 확인</th>
 					<td><input type="password" id=password2 name="password2"></td>
 				</tr>
 				<tr>
@@ -170,7 +171,7 @@
 					}
 				</script>
 				<tr>
-					<th>비밀번호 힌트/답변</th>
+					<th style="text-indent:20px;">비밀번호 힌트/답변</th>
 					<td><select name='pwHint' size='1' class='select' id="pwHint">
 							<option value='' selected disabled hidden>선택하세요</option>
 							<option value='졸업한 초등학교 이름은?'>졸업한 초등학교 이름은?</option>
@@ -186,7 +187,7 @@
 				</tr>
 				<tr>
 
-					<th>답변</th>
+					<th style="text-indent:20px;">답변</th>
 					<td><input type='text' name='pwHintAns'
 						value="${memberVO.pwHintAns}"></td>
 				</tr>
@@ -215,7 +216,7 @@
 							$("#email_dns").val(email[1]);
 						}
 					</script>
-					<th>이메일</th>
+					<th style="text-indent:20px;">이메일</th>
 					<td><input type='text' id="email_id">@ <input
 						type='text' id="email_dns"> <select id="email_select"
 						onchange="selectEmail()">
@@ -229,7 +230,7 @@
 							<option value="nate.com">nate.com</option>
 					</select> <input type="hidden" name="email" id="email"> <br> <br></td>
 				</tr>
-				<tr height="2" bgcolor="#428bca">
+				<tr height="2" bgcolor="#ffa500">
 					<td colspan="2">
 				</tr>
 				<tr>
@@ -244,7 +245,7 @@
 							}
 						}
 					</script>
-					<th>주소</th>
+					<th style="text-indent:20px;">주소</th>
 					<td><br>
 						<div class="form-group">
 							<input class="form-control" style="width: 40%; display: inline;"
@@ -264,7 +265,7 @@
 							<input class="form-control" placeholder="상세주소" name="addr_detail"
 								id="addr_detail" type="text" value="${addrVO.addr_detail }" />
 						</div></td>
-				<tr height="2" bgcolor="#428bca">
+				<tr height="2" bgcolor="#ffa500">
 					<td colspan="2"></td>
 				</tr>
 				<script>
@@ -313,7 +314,7 @@
 					}
 				</script>
 				<tr>
-					<th>전화번호</th>
+					<th style="text-indent:20px;">전화번호</th>
 					<td><br> <input type="text" name="houseNum" id="houseNum"
 						value="${memberVO.houseNum }" maxlength="10"> ex)027601111
 						('-' 를 사용하지 마세요.)
@@ -322,7 +323,7 @@
 					<th><br></th>
 				</tr>
 				<tr>
-					<th>핸드폰 번호</th>
+					<th style="text-indent:20px;">핸드폰 번호</th>
 					<td><input type="text" name="phoneNum" id="phoneNum"
 						value="${memberVO.phoneNum }" maxlength="11">
 						ex)01011112222 ('-' 를 사용하지 마세요.)
@@ -345,10 +346,10 @@
 					}
 				</script>
 				<tr>
-					<th>메일/sns 정보 수신</th>
-					<td class="s"><input type="radio" id="receive_email_1"
+					<th style="text-indent:20px;">메일/sns 정보 수신</th>
+					<td class="s"><input style= "accent-color: #ff136f"; type="radio" id="receive_email_1"
 						name="receive_email" value=1> 수신 <input type="radio"
-						id="receive_email_0" name="receive_email" value=0> 수신거부</td>
+						id="receive_email_0" name="receive_email" style= "accent-color: #ff136f"; value=0> 수신거부</td>
 				</tr>
 
 				<tr>
@@ -357,26 +358,28 @@
 				</tr>
 
 
-				<tr height="2" bgcolor="#428bca">
+				<tr height="2" bgcolor="#ff136f">
 					<td colspan="2"></td>
 
 				</tr>
 				<tr>
 					<th><br></th>
 				</tr>
+				<form >
 				<tr>
 
 
 					<td colspan="2" align="center"><input type="submit"
 						onclick="return checkPattern()" value="정보수정"
-						style="background: #428bca; border: medium none; border-radius: 0; color: #FFFFFF; font-family: 'Roboto', sans-serif; padding: 6px 25px;">
+						style="background: #ff136f; border: medium none; border-radius: 8px; color: #FFFFFF; font-family: 'Roboto', sans-serif; padding: 6px 25px;">
 
 						<input type="reset" class="btn btn-default" value="다시입력"
-						style="background: #428bca; border: medium none; border-radius: 0; color: #FFFFFF; font-family: 'Roboto', sans-serif; padding: 6px 25px;" />
+						style="background: #ff136f; cborder: medium none; border-radius: 8px; color: #FFFFFF; font-family: 'Roboto', sans-serif; padding: 6px 25px;" />
 				</tr>
 				<tr>
 					<th><br></th>
 				</tr>
+				</form>
 			</table>
 
 		</form>

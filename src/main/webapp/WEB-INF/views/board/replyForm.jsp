@@ -89,9 +89,9 @@
 				<tr>
 					<td align="right"></td>
 					<td colspan="2"><input type="submit" value="글쓰기" 
-					style="background: #428bca; border: medium none; border-radius: 0; color: #FFFFFF; font-family: 'Roboto', sans-serif; padding: 6px 25px;"/> <input
+					style="background: #ff136f; border: medium none; border-radius: 0; color: #FFFFFF; font-family: 'Roboto', sans-serif; padding: 6px 25px;"/> <input
 						type=button value="목록보기" onClick="backToList(this.form)" 
-						style="background: #428bca; border: medium none; border-radius: 0; color: #FFFFFF; font-family: 'Roboto', sans-serif; padding: 6px 25px;"/></td>
+						style="background: #ff136f; border: medium none; border-radius: 0; color: #FFFFFF; font-family: 'Roboto', sans-serif; padding: 6px 25px;"/></td>
 				</tr>
 			</table>
 		</form>
