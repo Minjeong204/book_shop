@@ -1,5 +1,5 @@
 # 스프링을 이용한 책 쇼핑몰
-## 사용기술 <img src="https://img.shields.io/badge/Java-11-pink"> <img src="https://img.shields.io/badge/JSP-2.3-hotpink"> <img src="https://img.shields.io/badge/Servlet-4.0-skyblue"> <img src="https://img.shields.io/badge/Tomcat-9.0.70-yellow"> <img src="https://img.shields.io/badge/Oracle-11.2.0.2.0-red"> <img src="[https://img.shields.io/badge/spring-3.1.1-pink"> <img src = "https://img.shields.io/badge/jquery-skyblue"> <img src = "https://img.shields.io/badge/css-3-orange"> <img src = "https://img.shields.io/badge/html-5-blue"> <img src ="https://img.shields.io/badge/eclipse-blue"> 
+## 사용기술 <img src="https://img.shields.io/badge/Java-11-pink"> <img src="https://img.shields.io/badge/JSP-2.3-hotpink"> <img src="https://img.shields.io/badge/spring-4.3.12-green"> <img src="https://img.shields.io/badge/Servlet-4.0-skyblue"> <img src="https://img.shields.io/badge/Tomcat-9.0.70-yellow"> <img src="https://img.shields.io/badge/Oracle-11.2.0.2.0-red"> <img src="[https://img.shields.io/badge/spring-3.1.1-pink"> <img src = "https://img.shields.io/badge/jquery-skyblue"> <img src = "https://img.shields.io/badge/css-3-orange"> <img src = "https://img.shields.io/badge/html-5-blue"> <img src ="https://img.shields.io/badge/eclipse-blue"> 
 
 
 # JSP 게시판 웹사이트 
@@ -46,7 +46,8 @@ root directory에서 Run As → Run on Server
 
 ### :scroll:회원가입
 
-...
+![회원가입](https://user-images.githubusercontent.com/117965315/215334028-f987d563-6297-42c5-b58f-a5ecfd4b46e4.png)
+
 
 ### :clipboard:로그인
 
@@ -73,7 +74,9 @@ root directory에서 Run As → Run on Server
 <img width="921" alt="장바구니" src="https://user-images.githubusercontent.com/117965315/215308594-b176697a-a18c-4a45-89c2-eae8ecb4bc86.PNG">
 
 - #### 주문
-....
+
+![주문](https://user-images.githubusercontent.com/117965315/215334086-5fcaae05-4c9d-496e-aa22-c2c1217a69f5.png)
+
 
 - #### 구매 내역 조회
 
@@ -81,7 +84,8 @@ root directory에서 Run As → Run on Server
 
 - #### 회원 정보 수정
 
-....
+![회원정보수정](https://user-images.githubusercontent.com/117965315/215334058-b2cd2366-6213-4d9f-9af3-1ec57068aae5.png)
+
 
 - #### 회원 정보
 
@@ -95,6 +99,21 @@ root directory에서 Run As → Run on Server
 
 - #### 클래스다이어그램
 
+<img width="442" alt="1" src="https://user-images.githubusercontent.com/117965315/215334377-f94f2051-9b64-4dcd-b95d-79ddddd8c3c7.png">
+<img width="892" alt="2" src="https://user-images.githubusercontent.com/117965315/215334378-0c94a250-7d61-470c-8d5f-54980ecb0a9b.png">
+<img width="734" alt="3" src="https://user-images.githubusercontent.com/117965315/215334379-52a014b5-bc92-4b0d-9380-772529ff818f.png">
+
 - #### 시퀀스다이어그램
 
+![KakaoTalk_20230129_185041293](https://user-images.githubusercontent.com/117965315/215334388-20f03a79-9305-42dd-adba-f5f55b0ea717.png)
+![KakaoTalk_20230129_185041355](https://user-images.githubusercontent.com/117965315/215334390-9cb58e5f-7482-4668-8764-ca80823072fc.png)
+![KakaoTalk_20230129_185041419](https://user-images.githubusercontent.com/117965315/215334391-8579bb4d-1714-4ea6-9842-7042e02764cc.png)
+![KakaoTalk_20230129_185041489](https://user-images.githubusercontent.com/117965315/215334392-92c2b2ed-6349-483f-8a6f-41fa28fe2d82.png)
+
 - #### 유스케이스다이어그램
+
+![KakaoTalk_20230129_184113123](https://user-images.githubusercontent.com/117965315/215334345-42c60e32-d1d5-4d95-8fc3-3740087ac70a.png)
+
+- #### ERD다이어그램
+
+![KakaoTalk_20230129_182737841](https://user-images.githubusercontent.com/117965315/215334429-c1ecb820-e240-463e-9b30-ac251db1f820.png)
