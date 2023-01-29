@@ -169,11 +169,15 @@ function deleteReview(){
 		console.log("detail");
 		var detail = document.getElementById("reviews");
 		detail.style.display = "none";
+		$("#rev").removeClass("active");
+		$("#det").removeClass("active");
 		
 	}
 	function review() {
 		var review = document.getElementById("reviews");
 		review.style.display = "block";
+		$("#det").removeClass("active");
+		$("#rev").removeClass("active");
 	}
 </script>
 
@@ -226,17 +230,17 @@ function deleteReview(){
 
 				<div class="col-sm-12">
 					<ul style="background-color: #ffa500" class="nav nav-tabs">
-						<li class="active" onClick="detail()"><a href="#details"
+						<li class="active" onClick="detail()" id="det"><a href="#details"
 							data-toggle="tab">Details</a></li>
-						<li><a href="#reviews" data-toggle="tab" onclick="review()">Review</a></li>
+						<li id="rev"><a href="#reviews" data-toggle="tab" onclick="review()">Review</a></li>
 					</ul>
 				</div>
 				<div class="tab-content">
 					<div class="tab-pane active in" id="details">
 						${product.description }</div>
 
-					<div style="background-color: #ffa500" class="tab-pane fade"
-						id="reviews" style="margin: 0 auto; display: none;">
+					<div  class="tab-pane"
+						id="reviews" style="margin: 0 auto; ">
 
 
 						<!-- 여기부터 댓글주석 -->
@@ -245,9 +249,6 @@ function deleteReview(){
 						<section class="content container-fluid">
 							<div class="col-lg-12">
 								<div class="box box-primary">
-									<div class="box-header with-border">
-										<h3 class="box-title">리뷰 작성</h3>
-									</div>
 									<div class="box-body">
 										<c:if
 											test="${pageContext.request.userPrincipal.name != null }">

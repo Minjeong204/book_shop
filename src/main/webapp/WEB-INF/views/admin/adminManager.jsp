@@ -22,6 +22,7 @@ button {
 </style>
 <meta charset="UTF-8">
 <script type="text/javascript">
+
 	function member_search() {
 
 		location.href = "member_search?id=" + $("#member_search").val();
@@ -62,21 +63,25 @@ button {
                   var product = document.getElementById("product");
                   member.style.display = "none";
                   product.style.display = "block";
+                  $("#pro").removeClass("active");
+                  $("#mem").addClass("active");
                }
                function product() {
                   var member = document.getElementById("member");
                   var product = document.getElementById("product");
                   member.style.display = "block";
                   product.style.display = "none";
+                  $("#mem").removeClass("active");
+                  $("#pro").addClass("active");
                }
       </script>
 
    <div class="container">
       <div class="col-12">
          <ul class="nav nav-tabs">
-            <li class="active"><a href="#member" data-toggle="tab"
-               onclick="member();">회원관리</a></li>
-            <li style="background-color:#feeae8"><a style="color:#000000;" href="#product" data-toggle="tab" onclick="product();">상품관리</a></li>
+            <li class="active" id="mem"><a href="#member" style="color:#000000;" data-toggle="tab"
+               onclick="member();">상품관리</a></li>
+            <li id="pro"><a style="color:#000000;" href="#product" data-toggle="tab" onclick="product();">회원관리</a></li>
          </ul>
       </div>
       <div class="tab_content">
