@@ -12,7 +12,7 @@
 
 ### 사용언어
 
-<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white"> <https://img.shields.io/badge/spring-4.3.12-green> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3&logoColor=white"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=black"> <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=MySQL&logoColor=white"> 
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3&logoColor=white"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=black"> <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=MySQL&logoColor=white"> 
 
 ### 툴
 
@@ -38,34 +38,63 @@ root directory에서 Run As → Run on Server
 
 ### :pushpin:메인페이지
 
-![localhost_8080_BBS_main jsp (2)](https://user-images.githubusercontent.com/77483541/140289288-3855dbde-328c-4a51-bf06-d52957cbf115.png)
+<img width="1262" alt="메인화면" src="https://user-images.githubusercontent.com/117965315/215308360-63d56529-89b8-4ac8-a15a-8877f8192b73.PNG">
+
+### :mag_right: 상품설명
+
+<img width="1266" alt="상품설명" src="https://user-images.githubusercontent.com/117965315/215308458-f370468e-0053-426e-b2aa-a2ddfa7ed1c8.PNG">
 
 ### :scroll:회원가입
 
-![image-20211104180057407](https://user-images.githubusercontent.com/77483541/140289500-87f1b279-0a02-42b9-a3f7-00325c8e6a0f.png)
+...
 
 ### :clipboard:로그인
 
-![image-20211104175934344](https://user-images.githubusercontent.com/77483541/140289572-9f564575-fafb-41cb-b4f6-7019b8495853.png)
+<img width="1268" alt="로그인화면" src="https://user-images.githubusercontent.com/117965315/215308467-5eb958c2-bbdd-4b9e-a000-3ae48e3c3725.PNG">
 
-### :open_file_folder:게시판CRUD
+### ::octocat::관리자기능
 
-- #### list
+- #### 관리자화면
 
-![localhost_8080_BBS_bbs jsp](https://user-images.githubusercontent.com/77483541/140289664-219baa36-2ef9-44fe-bbdc-da22ea9d085d.png)
+<img width="1072" alt="관리자 화면" src="https://user-images.githubusercontent.com/117965315/215308509-5b3b31aa-a761-49a3-b2c1-38b899bdf6dd.PNG">
 
-- #### create
+- #### 상품추가
 
-![localhost_8080_BBS_write jsp](https://user-images.githubusercontent.com/77483541/140289722-fad35d0a-5d01-427d-80ac-e29ed6257067.png)
+<img width="721" alt="상품추가" src="https://user-images.githubusercontent.com/117965315/215308554-c70c6ba4-cf0f-42d9-b251-d86700696bfa.PNG">
 
-- #### read
+### :open_file_folder:사용자기능
 
-![localhost_8080_BBS_view jsp_bbsID=10 (2)](https://user-images.githubusercontent.com/77483541/140289766-d238527d-6098-42e1-be3e-0f0414e4828c.png)
+- #### 로그인화면
 
-- #### update
+<img width="1268" alt="로그인화면" src="https://user-images.githubusercontent.com/117965315/215308530-7003a751-eb3b-4dc0-9d0f-39655889e7fb.PNG">
 
-![localhost_8080_BBS_update jsp_bbsID=10](https://user-images.githubusercontent.com/77483541/140289866-bf6a28e2-545a-416e-8f53-2cf12191bc13.png)
+- #### 장바구니
 
-- #### delete
+<img width="921" alt="장바구니" src="https://user-images.githubusercontent.com/117965315/215308594-b176697a-a18c-4a45-89c2-eae8ecb4bc86.PNG">
 
-![localhost_8080_BBS_bbs jsp (1)](https://user-images.githubusercontent.com/77483541/140289924-24c9032c-2248-4d94-b610-008a38af593e.png)
+- #### 주문
+....
+
+- #### 구매 내역 조회
+
+<img width="936" alt="구매 내역 조회" src="https://user-images.githubusercontent.com/117965315/215308515-7e690b16-9572-4d44-b2d9-74ddcf8e09f9.PNG">
+
+- #### 회원 정보 수정
+
+....
+
+- #### 회원 정보
+
+<img width="905" alt="회원정보" src="https://user-images.githubusercontent.com/117965315/215308788-0439ba81-f74b-4321-b3f0-65ecb1005975.PNG">
+
+- #### 아이디 찾기/비밀번호 찾기
+
+<img width="251" alt="아이디 찾기" src="https://user-images.githubusercontent.com/117965315/215308572-b746d980-cb82-435e-a854-5ad10ffeba7a.PNG"> <img width="268" alt="비밀번호 찾기" src="https://user-images.githubusercontent.com/117965315/215308540-e545f723-5d5f-49eb-95c3-5bdd4f1ba2b9.PNG">
+
+### :bar_chart:다이어그램
+
+- #### 클래스다이어그램
+
+- #### 시퀀스다이어그램
+
+- #### 유스케이스다이어그램
