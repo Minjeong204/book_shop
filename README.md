@@ -40,7 +40,7 @@ root directory에서 Run As → Run on Server
 
 <img width="1262" alt="메인화면" src="https://user-images.githubusercontent.com/117965315/215308360-63d56529-89b8-4ac8-a15a-8877f8192b73.PNG">
 
-### ::mag_right: 상품설명
+### :mag_right: 상품설명
 
 <img width="1266" alt="상품설명" src="https://user-images.githubusercontent.com/117965315/215308458-f370468e-0053-426e-b2aa-a2ddfa7ed1c8.PNG">
 
@@ -58,10 +58,6 @@ root directory에서 Run As → Run on Server
 
 <img width="1072" alt="관리자 화면" src="https://user-images.githubusercontent.com/117965315/215308509-5b3b31aa-a761-49a3-b2c1-38b899bdf6dd.PNG">
 
-- #### 구매 내역 조회
-
-<img width="936" alt="구매 내역 조회" src="https://user-images.githubusercontent.com/117965315/215308515-7e690b16-9572-4d44-b2d9-74ddcf8e09f9.PNG">
-
 - #### 상품추가
 
 <img width="721" alt="상품추가" src="https://user-images.githubusercontent.com/117965315/215308554-c70c6ba4-cf0f-42d9-b251-d86700696bfa.PNG">
@@ -77,8 +73,11 @@ root directory에서 Run As → Run on Server
 <img width="921" alt="장바구니" src="https://user-images.githubusercontent.com/117965315/215308594-b176697a-a18c-4a45-89c2-eae8ecb4bc86.PNG">
 
 - #### 주문
-
 ....
+
+- #### 구매 내역 조회
+
+<img width="936" alt="구매 내역 조회" src="https://user-images.githubusercontent.com/117965315/215308515-7e690b16-9572-4d44-b2d9-74ddcf8e09f9.PNG">
 
 - #### 회원 정보 수정
 
@@ -91,3 +90,11 @@ root directory에서 Run As → Run on Server
 - #### 아이디 찾기/비밀번호 찾기
 
 <img width="251" alt="아이디 찾기" src="https://user-images.githubusercontent.com/117965315/215308572-b746d980-cb82-435e-a854-5ad10ffeba7a.PNG"> <img width="268" alt="비밀번호 찾기" src="https://user-images.githubusercontent.com/117965315/215308540-e545f723-5d5f-49eb-95c3-5bdd4f1ba2b9.PNG">
+
+### :bar_chart:다이어그램
+
+- #### 클래스다이어그램
+
+- #### 시퀀스다이어그램
+
+- #### 유스케이스다이어그램
