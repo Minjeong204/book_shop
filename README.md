@@ -1,5 +1,5 @@
 # 스프링을 이용한 책 쇼핑몰
-## 사용기술 <img src="https://img.shields.io/badge/Java-11-pink"> <img src="https://img.shields.io/badge/JSP-2.3-hotpink"> <img src="https://img.shields.io/badge/spring-4.3.12-green"> <img src="https://img.shields.io/badge/Servlet-4.0-skyblue"> <img src="https://img.shields.io/badge/Tomcat-9.0.70-yellow"> <img src="https://img.shields.io/badge/Oracle-11.2.0.2.0-red"> <img src="[https://img.shields.io/badge/spring-3.1.1-pink"> <img src = "https://img.shields.io/badge/jquery-skyblue"> <img src = "https://img.shields.io/badge/css-3-orange"> <img src = "https://img.shields.io/badge/html-5-blue"> <img src ="https://img.shields.io/badge/eclipse-blue"> 
+## 사용기술 <img src="https://img.shields.io/badge/Java-11-pink"> <img src="https://img.shields.io/badge/JSP-2.3-hotpink"> <img src="https://img.shields.io/badge/spring-4.3.12-green">  <img src="https://img.shields.io/badge/Tomcat-9.0.70-yellow"> <img src="https://img.shields.io/badge/Oracle-11.2.0.2.0-red"> <img src="[https://img.shields.io/badge/spring-3.1.1-pink"> <img src = "https://img.shields.io/badge/jquery-skyblue"> <img src = "https://img.shields.io/badge/css-3-orange"> <img src = "https://img.shields.io/badge/html-5-blue"> <img src ="https://img.shields.io/badge/eclipse-blue"> 
 
 
 # 스프링 쇼핑몰 웹사이트 
@@ -12,7 +12,7 @@
 
 ### 사용언어
 
-<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3&logoColor=white"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=black"> <img src="https://img.shields.io/badge/oracle-ff0000?style=for-the-badge&logo=Oracle&logoColor=white"> <img src="https://img.shields.io/badge/jquery-0067A3?style=for-the-badge&logo=jquery&logoColor=white"> 
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3&logoColor=white"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=black"> <img src="https://img.shields.io/badge/java-ff0000?style=for-the-badge&logo=java&logoColor=white"> <img src="https://img.shields.io/badge/spring-81c147?style=for-the-badge&logo=spring&logoColor=white"> <img src="https://img.shields.io/badge/oracle-ff0000?style=for-the-badge&logo=Oracle&logoColor=white"> <img src="https://img.shields.io/badge/jquery-0067A3?style=for-the-badge&logo=jquery&logoColor=white"> 
 
 ### 툴
 
