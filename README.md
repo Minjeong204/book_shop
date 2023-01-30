@@ -13,11 +13,14 @@
 
 ### 툴
 
-<img src="https://img.shields.io/badge/Eclipse IDE-2C2255?style=for-the-badge&logo=Eclipse IDE&logoColor=white"> 
+<img src="https://img.shields.io/badge/Eclipse IDE-2C2255?style=for-the-badge&logo=Eclipse IDE&logoColor=white"> <img src="https://img.shields.io/badge/sqldeveloper-009000?style=for-the-badge&logo=sqldeveloper IDE&logoColor=white"> 
 
 ### 버전관리
 
 <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=Git&logoColor=white"> <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white">
+
+### 서버
+<img src="https://img.shields.io/badge/tomcat-ffd400?style=for-the-badge&logo=tomcat&logoColor=white">
 
 ------
 
