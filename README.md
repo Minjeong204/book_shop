@@ -2,9 +2,9 @@
 ## 사용기술 <img src="https://img.shields.io/badge/Java-11-pink"> <img src="https://img.shields.io/badge/JSP-2.3-hotpink"> <img src="https://img.shields.io/badge/spring-4.3.12-green"> <img src="https://img.shields.io/badge/Servlet-4.0-skyblue"> <img src="https://img.shields.io/badge/Tomcat-9.0.70-yellow"> <img src="https://img.shields.io/badge/Oracle-11.2.0.2.0-red"> <img src="[https://img.shields.io/badge/spring-3.1.1-pink"> <img src = "https://img.shields.io/badge/jquery-skyblue"> <img src = "https://img.shields.io/badge/css-3-orange"> <img src = "https://img.shields.io/badge/html-5-blue"> <img src ="https://img.shields.io/badge/eclipse-blue"> 
 
 
-# JSP 게시판 웹사이트 
+# 스프링 쇼핑몰 웹사이트 
 
- JSP로 만든 게시판 웹 커뮤니티 사이트입니다.
+ 스프링으로 만든 게시판 도서  사이트입니다.
 
 ------
 
